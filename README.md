@@ -45,7 +45,7 @@ businesses.
 
 | Path | What lives there |
 | --- | --- |
-| `hub-web/` | The Content Hub as a website (Vercel + Supabase): setup guide in `hub-web/README.md` |
+| `hub-web/` | The Content Hub website (static, on Vercel): see `hub-web/README.md` |
 | `hub/` | The private Content Hub page (approvals, captions, downloads, file drop): source, seed builder, asset map |
 | `calendar/` | Weekly calendars: `YYYY-Www-eaglescroft.md`, `YYYY-Www-joshua.md`, `YYYY-Www-resources.md` |
 | `personal/strategy.md` | Joshua's personal track: audiences, pillars, voice and the "notebook" visual identity |

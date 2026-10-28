@@ -142,23 +142,10 @@ select { width: 100%; min-width: 0; font: inherit; color: inherit; background: v
 .empty { padding: 28px; text-align: center; color: var(--muted); }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
-/* Web app additions: sign-in, toolbar */
-.auth { min-height: 100vh; display: grid; place-items: center; padding: 24px var(--gutter-r) 24px var(--gutter); background: var(--navy); }
-.auth .card { width: 100%; max-width: 420px; background: var(--surface); color: var(--ink); border-radius: 22px; padding: 28px; box-shadow: 0 30px 80px -30px rgba(0,0,0,.6); display: grid; gap: 14px; }
-.auth .eagle { width: 46px; color: var(--navy); }
-:root[data-theme="dark"] .auth .eagle { color: #fff; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .auth .eagle { color: #fff; } }
-.auth h1 { font-size: 26px; }
-.auth p { margin: 0; color: var(--muted); }
-.auth label { font-size: 13px; font-weight: 600; color: var(--muted); }
-.auth input { width: 100%; border: 1px solid var(--line); background: var(--surface-2); border-radius: 12px; padding: 12px 14px; font-size: 16px; }
-.auth input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-.auth .btn { justify-content: center; padding: 12px; }
-.auth .link { background: none; border: 0; color: var(--accent); font-weight: 600; padding: 0; text-align: left; }
-.auth .authmsg { font-size: 14px; color: var(--muted); min-height: 1.2em; }
-.auth .authmsg.err { color: var(--warn); }
+/* Web app additions */
 @media (min-width: 761px) { .post { overflow: clip; } .post .media { align-self: start; position: sticky; top: 16px; } }
 .userbar { display: flex; align-items: center; gap: 8px; }
 .userbar button { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); color: #fff; border-radius: 10px; height: 34px; padding: 0 12px; font-size: 13px; font-weight: 600; }
+.feedback textarea { min-height: 150px; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 13px; }
 .loading { padding: 40px; text-align: center; color: var(--muted); }
 [hidden] { display: none !important; }

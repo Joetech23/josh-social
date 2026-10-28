@@ -1,0 +1,754 @@
+{
+ "posts": [
+  {
+   "id": "005",
+   "week": "2026-W44",
+   "account": "eaglescroft",
+   "date": "2026-10-26",
+   "order": 0,
+   "series": "Hangar Notes",
+   "title": "We don't just talk about AI. We run on it.",
+   "format": "Single image (3D coin)",
+   "build": "ready",
+   "needs": "",
+   "tip": "Pin this as the intro post on every profile.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    },
+    {
+     "platform": "X",
+     "time": "08:00 + 18:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/005-w44-mon-launch-coin/eaglescroft-mon-26-oct.png",
+     "name": "eaglescroft-mon-26-oct.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/005-w44-mon-launch-coin/eaglescroft-mon-26-oct.png",
+     "name": "eaglescroft-mon-26-oct.png",
+     "label": "Image (PNG)"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn / Facebook",
+     "text": "We don't just talk about AI. We run on it.\n\nEaglescroft is a digital agency rooted in Abuja and working with businesses around the world.\nEvery day we use AI to research, build, automate and create, for our clients and for ourselves.\n\nFrom this week, we're opening the hangar doors:\n→ Flight Reports: real problems we've solved with AI\n→ Ground School: practical lessons you can use today\n→ Hangar Notes: what we're building next\n→ Cockpit Chat: how we actually work with AI\n→ On the Radar: the updates that matter, minus the hype\n\nReal tools. Real workflows. No hype.\nWhat would you hand to AI first in your business? Tell us below.\n\n#Eaglescroft #AIForBusiness #PracticalAI #FutureOfWork"
+    },
+    {
+     "label": "X",
+     "text": "We don't just talk about AI. We run on it.\nEvery day at Eaglescroft, AI helps us research, build, automate and create.\nStarting today, we're showing you exactly how. Real tools, no hype. 🧵 Follow along."
+    }
+   ]
+  },
+  {
+   "id": "006",
+   "week": "2026-W44",
+   "account": "eaglescroft",
+   "date": "2026-10-27",
+   "order": 1,
+   "series": "Flight Report",
+   "title": "13,000 raw records → 12,000+ scored leads",
+   "format": "6-slide carousel",
+   "build": "design",
+   "needs": "",
+   "tip": "X thread (6 posts): hook → problem → clean → score → write → lesson + link in reply.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    },
+    {
+     "platform": "X",
+     "time": "08:00 + 18:30"
+    }
+   ],
+   "media": [],
+   "files": [],
+   "captions": [
+    {
+     "label": "LinkedIn / Facebook",
+     "text": "13,000 raw records. 12,000+ scored leads.\n\nA client came to us with a huge prospect list and one problem: nobody could tell who to call first, and every message sounded the same.\n\nSo we built a lead engine:\n1. Clean: removed duplicates, fixed broken fields, filled the gaps\n2. Score: ranked every lead on how well they fit and how ready they look\n3. Write: an AI audit engine drafted a tailored opening line for each prospect\n\nThe team now starts every day with a ranked list and a personal hook for each call.\nA human still approves every message. That part stays human.\n\nThe lesson: your old list is probably worth more than you think. It just needs a system.\n\nWant us to look at yours? Link in the first comment.\n#LeadGeneration #AIAutomation #CRM #Eaglescroft"
+    }
+   ]
+  },
+  {
+   "id": "007",
+   "week": "2026-W44",
+   "account": "eaglescroft",
+   "date": "2026-10-28",
+   "order": 2,
+   "series": "Ground School",
+   "title": "Edit faster without cutting corners: our AI-assisted video workflow",
+   "format": "6-slide carousel",
+   "build": "ready",
+   "needs": "",
+   "tip": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post (title: \"Edit faster without cutting corners\").",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    },
+    {
+     "platform": "X",
+     "time": "08:00 + 18:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-1.png",
+     "name": "eaglescroft-wed-28-oct-1.png"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-2.png",
+     "name": "eaglescroft-wed-28-oct-2.png"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-3.png",
+     "name": "eaglescroft-wed-28-oct-3.png"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-4.png",
+     "name": "eaglescroft-wed-28-oct-4.png"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-5.png",
+     "name": "eaglescroft-wed-28-oct-5.png"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-6.png",
+     "name": "eaglescroft-wed-28-oct-6.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-1.png",
+     "name": "eaglescroft-wed-28-oct-1.png",
+     "label": "Slide 1"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-2.png",
+     "name": "eaglescroft-wed-28-oct-2.png",
+     "label": "Slide 2"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-3.png",
+     "name": "eaglescroft-wed-28-oct-3.png",
+     "label": "Slide 3"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-4.png",
+     "name": "eaglescroft-wed-28-oct-4.png",
+     "label": "Slide 4"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-5.png",
+     "name": "eaglescroft-wed-28-oct-5.png",
+     "label": "Slide 5"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-6.png",
+     "name": "eaglescroft-wed-28-oct-6.png",
+     "label": "Slide 6"
+    },
+    {
+     "url": "posts/2026-10/007-w44-wed-video-workflow/eaglescroft-wed-28-oct-linkedin.pdf",
+     "name": "eaglescroft-wed-28-oct-linkedin.pdf",
+     "label": "LinkedIn PDF"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn / Facebook",
+     "text": "Video is the most-watched format on every platform, and the most time-hungry to make.\n\nHere's the AI-assisted workflow we use at Eaglescroft:\n→ Script: AI drafts from a brief, we rewrite the first 3 seconds by hand\n→ Voice: clean-up or AI voice, depending on the brief\n→ Rough cut: automatic captions and silence removal\n→ Polish: B-roll, motion and branding, still done by a human editor\n\nAI does the heavy lifting. Taste is still human.\nWhich step eats most of your time? Comment 1, 2, 3 or 4 👇\n#VideoEditing #AIVideo #ContentCreation #Eaglescroft"
+    },
+    {
+     "label": "X",
+     "text": "Edit faster without cutting corners. Our AI-assisted video workflow:\n1. Script: AI drafts, we write the hook\n2. Voice: AI clean-up\n3. Rough cut: auto-captions and silence cuts\n4. Polish: still human.\nWhich step eats your time?"
+    }
+   ]
+  },
+  {
+   "id": "008",
+   "week": "2026-W44",
+   "account": "eaglescroft",
+   "date": "2026-10-29",
+   "order": 3,
+   "series": "On the Radar",
+   "title": "GoHighLevel's AI Employee: what it does, costs and who should skip it",
+   "format": "5-slide carousel",
+   "build": "design",
+   "needs": "",
+   "tip": "Re-check HighLevel's current AI Employee pricing and language support before this goes out.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    },
+    {
+     "platform": "X",
+     "time": "08:00 + 18:30"
+    }
+   ],
+   "media": [],
+   "files": [],
+   "captions": [
+    {
+     "label": "LinkedIn / Facebook",
+     "text": "Your CRM can now answer your phone. Should it?\n\nGoHighLevel's \"AI Employee\" bundles AI for chat and SMS, phone calls, review replies and content into one add-on.\n\nOur honest take, from auditing HighLevel builds:\nGood fit: your leads already live in HighLevel and you miss calls after hours.\nCheck first: the real monthly cost. The add-on is billed per sub-account, on top of your plan.\nCheck first: language support for your customers before promising voice AI.\nSkip it: if your follow-up process is broken. AI will only automate the mess.\n\nFix the process first, then switch on the AI.\n#GoHighLevel #CRM #AIAutomation #MarketingAutomation"
+    }
+   ]
+  },
+  {
+   "id": "009",
+   "week": "2026-W44",
+   "account": "eaglescroft",
+   "date": "2026-10-30",
+   "order": 4,
+   "series": "Cockpit Chat",
+   "title": "Don't ask AI if your idea is good. Ask how it fails.",
+   "format": "Single image (3D bubble)",
+   "build": "ready",
+   "needs": "",
+   "tip": "X: the prompt as a single post plus the graphic.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    },
+    {
+     "platform": "X",
+     "time": "08:00 + 18:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/009-w44-fri-argue-bubble/eaglescroft-fri-30-oct.png",
+     "name": "eaglescroft-fri-30-oct.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/009-w44-fri-argue-bubble/eaglescroft-fri-30-oct.png",
+     "name": "eaglescroft-fri-30-oct.png",
+     "label": "Image (PNG)"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn / Facebook",
+     "text": "Don't ask AI if your idea is good. It will usually say yes.\n\nAsk it how your idea fails.\n\nThe prompt we use before every big decision at Eaglescroft:\n\"Here's my plan: [paste plan]. Act as a sceptical investor. Give me the 3 strongest reasons it could fail, and what would prove each one wrong.\"\n\nThen a human decides. Every time.\nSave this for your next planning meeting.\n#PracticalAI #PromptEngineering #Eaglescroft"
+    }
+   ]
+  },
+  {
+   "id": "010",
+   "week": "2026-W44",
+   "account": "eaglescroft",
+   "date": "2026-10-31",
+   "order": 5,
+   "series": "Ground School",
+   "title": "Your business never sleeps. Neither do your replies.",
+   "format": "3-slide carousel (WhatsApp AI)",
+   "build": "ready",
+   "needs": "",
+   "tip": "Facebook and X: post the 3 slides as a carousel. LinkedIn: upload the PDF as a document post.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    },
+    {
+     "platform": "X",
+     "time": "08:00 + 18:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/010-w44-sat-whatsapp-ai/eaglescroft-sat-31-oct-1.png",
+     "name": "eaglescroft-sat-31-oct-1.png"
+    },
+    {
+     "url": "posts/2026-10/010-w44-sat-whatsapp-ai/eaglescroft-sat-31-oct-2.png",
+     "name": "eaglescroft-sat-31-oct-2.png"
+    },
+    {
+     "url": "posts/2026-10/010-w44-sat-whatsapp-ai/eaglescroft-sat-31-oct-3.png",
+     "name": "eaglescroft-sat-31-oct-3.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/010-w44-sat-whatsapp-ai/eaglescroft-sat-31-oct-1.png",
+     "name": "eaglescroft-sat-31-oct-1.png",
+     "label": "Slide 1"
+    },
+    {
+     "url": "posts/2026-10/010-w44-sat-whatsapp-ai/eaglescroft-sat-31-oct-2.png",
+     "name": "eaglescroft-sat-31-oct-2.png",
+     "label": "Slide 2"
+    },
+    {
+     "url": "posts/2026-10/010-w44-sat-whatsapp-ai/eaglescroft-sat-31-oct-3.png",
+     "name": "eaglescroft-sat-31-oct-3.png",
+     "label": "Slide 3"
+    },
+    {
+     "url": "posts/2026-10/010-w44-sat-whatsapp-ai/eaglescroft-sat-31-oct-linkedin.pdf",
+     "name": "eaglescroft-sat-31-oct-linkedin.pdf",
+     "label": "LinkedIn PDF"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn / Facebook",
+     "text": "It's 2:14 AM. A customer asks if you deliver to their area.\nYour team is asleep. Your WhatsApp assistant isn't.\n\nA well-built AI assistant can:\n→ Answer the questions you get 50 times a day\n→ Take the order or book the appointment\n→ Save the lead to your CRM for the morning\n→ Hand over to a human when it should\n\nWhat's stopping you from automating? Comment 1, 2, 3 or 4 (slide 2). We'll answer every one next week.\n#WhatsAppBusiness #AIChatbot #SmallBusiness #Eaglescroft"
+    }
+   ]
+  },
+  {
+   "id": "011",
+   "week": "2026-W44",
+   "account": "eaglescroft",
+   "date": "2026-11-01",
+   "order": 6,
+   "series": "Ground School",
+   "title": "Before you plug AI into your business, ask these 5 questions",
+   "format": "Single image (3D lock)",
+   "build": "ready",
+   "needs": "",
+   "tip": "",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    },
+    {
+     "platform": "X",
+     "time": "08:00 + 18:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/011-w44-sun-5-questions/eaglescroft-sun-1-nov.png",
+     "name": "eaglescroft-sun-1-nov.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/011-w44-sun-5-questions/eaglescroft-sun-1-nov.png",
+     "name": "eaglescroft-sun-1-nov.png",
+     "label": "Image (PNG)"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn / Facebook",
+     "text": "Before you plug AI into your business, ask these 5 questions:\n1. Who can see our data?\n2. Is it stored, or used to train the model?\n3. Is every action logged?\n4. Who is accountable when it's wrong?\n5. Can we switch it off tomorrow?\n\nIf a vendor can't answer all five clearly, wait.\nSave this for your next software demo.\n#AIGovernance #DataPrivacy #AIForBusiness #Eaglescroft"
+    }
+   ]
+  },
+  {
+   "id": "J01",
+   "week": "2026-W44",
+   "account": "joshua",
+   "date": "2026-10-26",
+   "order": 0,
+   "series": "Today I built",
+   "title": "I run my business on AI. From today, I'll show you how.",
+   "format": "Photo card",
+   "build": "ready",
+   "needs": "",
+   "tip": "Pin this as the intro post on your profiles.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:00"
+    },
+    {
+     "platform": "X",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/J01-w44-mon-intro/joshua-mon-26-oct.png",
+     "name": "joshua-mon-26-oct.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/J01-w44-mon-intro/joshua-mon-26-oct.png",
+     "name": "joshua-mon-26-oct.png",
+     "label": "Image (PNG)"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn",
+     "text": "For years I kept my profile quiet. That changes today.\n\nI'm Joshua, Founder & CTO of Eaglescroft. We build websites, AI chatbots, automations and video for businesses around the world, and we run our own business on the same tools.\n\nEvery day I use AI to research, write, design, automate and ship. Most of what I learn would help a trader in Wuse Market, a lecturer marking 300 scripts or a company drowning in admin just as much as it helps me.\n\nSo from today, I'm sharing it. Every day:\n→ What I built, and what broke\n→ How a trader, a lecturer or a company can use it tomorrow\n→ The AI updates that actually matter\n\nPlain language. No hype. Follow along."
+    },
+    {
+     "label": "X",
+     "text": "Quiet profile for years. Changing that today. I run my agency on AI. Every day I'll show what I built and how you can use it. Plain language, no hype."
+    }
+   ]
+  },
+  {
+   "id": "J02",
+   "week": "2026-W44",
+   "account": "joshua",
+   "date": "2026-10-27",
+   "order": 1,
+   "series": "AI for…",
+   "title": "3 free ways a trader can use AI on WhatsApp today",
+   "format": "5-slide carousel",
+   "build": "ready",
+   "needs": "",
+   "tip": "Facebook and X: post the 5 slides as a carousel. LinkedIn: upload the PDF as a document post (title: \"3 free ways to use AI on WhatsApp today\").",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:00"
+    },
+    {
+     "platform": "X",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-1.png",
+     "name": "joshua-tue-27-oct-1.png"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-2.png",
+     "name": "joshua-tue-27-oct-2.png"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-3.png",
+     "name": "joshua-tue-27-oct-3.png"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-4.png",
+     "name": "joshua-tue-27-oct-4.png"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-5.png",
+     "name": "joshua-tue-27-oct-5.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-1.png",
+     "name": "joshua-tue-27-oct-1.png",
+     "label": "Slide 1"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-2.png",
+     "name": "joshua-tue-27-oct-2.png",
+     "label": "Slide 2"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-3.png",
+     "name": "joshua-tue-27-oct-3.png",
+     "label": "Slide 3"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-4.png",
+     "name": "joshua-tue-27-oct-4.png",
+     "label": "Slide 4"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-5.png",
+     "name": "joshua-tue-27-oct-5.png",
+     "label": "Slide 5"
+    },
+    {
+     "url": "posts/2026-10/J02-w44-tue-traders/joshua-tue-27-oct-linkedin.pdf",
+     "name": "joshua-tue-27-oct-linkedin.pdf",
+     "label": "LinkedIn PDF"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn",
+     "text": "If you sell anything, AI can save you an hour a day, for free, from the phone in your pocket.\n\n3 things to try today:\n1. Snap your price list and ask AI to turn it into a clean message for customers.\n2. Ask it to write polite replies to the questions you answer 50 times a day.\n3. Voice-note your day's sales and ask it to total them and list what to restock.\n\nFree tools are enough to start. Pick one and try it before you close today.\nKnow a trader who should see this? Send it to them."
+    },
+    {
+     "label": "Facebook (Pidgin)",
+     "text": "If you dey sell anything, AI fit save you one hour every day, free, from your phone.\nTry these 3 today: snap your price list, make AI arrange am fine; make am write sweet replies for \"how much last price?\"; voice-note your sales, make e count am for you.\nStart with one. Share am give that your customer wey dey sell for market."
+    }
+   ]
+  },
+  {
+   "id": "J03",
+   "week": "2026-W44",
+   "account": "joshua",
+   "date": "2026-10-28",
+   "order": 2,
+   "series": "AI for…",
+   "title": "AI for a literature review, without cheating",
+   "format": "6-slide carousel",
+   "build": "ready",
+   "needs": "",
+   "tip": "LinkedIn: upload the PDF as a document post (title: \"AI for your literature review, without cheating\"). X: post slides 1, 4 and 5 with the X caption.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:00"
+    },
+    {
+     "platform": "X",
+     "time": "08:30"
+    }
+   ],
+   "media": [
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-1.png",
+     "name": "joshua-wed-28-oct-1.png"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-2.png",
+     "name": "joshua-wed-28-oct-2.png"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-3.png",
+     "name": "joshua-wed-28-oct-3.png"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-4.png",
+     "name": "joshua-wed-28-oct-4.png"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-5.png",
+     "name": "joshua-wed-28-oct-5.png"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-6.png",
+     "name": "joshua-wed-28-oct-6.png"
+    }
+   ],
+   "files": [
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-1.png",
+     "name": "joshua-wed-28-oct-1.png",
+     "label": "Slide 1"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-2.png",
+     "name": "joshua-wed-28-oct-2.png",
+     "label": "Slide 2"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-3.png",
+     "name": "joshua-wed-28-oct-3.png",
+     "label": "Slide 3"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-4.png",
+     "name": "joshua-wed-28-oct-4.png",
+     "label": "Slide 4"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-5.png",
+     "name": "joshua-wed-28-oct-5.png",
+     "label": "Slide 5"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-6.png",
+     "name": "joshua-wed-28-oct-6.png",
+     "label": "Slide 6"
+    },
+    {
+     "url": "posts/2026-10/J03-w44-wed-academics/joshua-wed-28-oct-linkedin.pdf",
+     "name": "joshua-wed-28-oct-linkedin.pdf",
+     "label": "LinkedIn PDF"
+    }
+   ],
+   "captions": [
+    {
+     "label": "LinkedIn",
+     "text": "Lecturers and students keep asking me the same question: \"Is using AI for research cheating?\"\n\nIt depends on how you use it. Here's the line I'd draw:\n✓ Finding papers faster: fine\n✓ Summarising so you know what to read properly: fine\n✓ Critiquing your draft: fine\n✗ Copying its citations without checking: dangerous, because AI invents references\n✗ Letting it write your argument: that's not your work any more\n\nUse AI to research faster, not to think less. Check your institution's policy and be open about how you used it.\nAcademics: what rules is your department setting? I'd love to hear."
+    },
+    {
+     "label": "X",
+     "text": "Is using AI for a literature review cheating? Depends how.\nFine: finding papers, summaries to plan your reading, critique of your draft.\nNot fine: citations you didn't check (AI invents them), paragraphs it wrote for you.\nResearch faster, not think less."
+    }
+   ]
+  },
+  {
+   "id": "J04",
+   "week": "2026-W44",
+   "account": "joshua",
+   "date": "2026-10-29",
+   "order": 3,
+   "series": "Today I built",
+   "title": "What I shipped today: the AI video agent",
+   "format": "Screenshot card + X thread",
+   "build": "needs-you",
+   "needs": "A screenshot of the AI video agent, plus one line each: what worked, what broke, what's next.",
+   "tip": "X thread: 4 posts: what it is → what worked → what broke → what's next.",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:00"
+    },
+    {
+     "platform": "X",
+     "time": "08:30"
+    }
+   ],
+   "media": [],
+   "files": [],
+   "captions": [
+    {
+     "label": "LinkedIn (draft)",
+     "text": "Today I worked on the AI agent that turns a SaaS product into a motion video.\n\nWhat worked: [one line]\nWhat broke: [one line]\nWhat I learned: [one line]\n\nBuilding in public from now on. Tomorrow: [next step]."
+    }
+   ]
+  },
+  {
+   "id": "J05",
+   "week": "2026-W44",
+   "account": "joshua",
+   "date": "2026-10-30",
+   "order": 4,
+   "series": "AI for…",
+   "title": "The 1-page AI policy every small company needs",
+   "format": "5-slide carousel",
+   "build": "design",
+   "needs": "",
+   "tip": "",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:00"
+    },
+    {
+     "platform": "X",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    }
+   ],
+   "media": [],
+   "files": [],
+   "captions": [
+    {
+     "label": "LinkedIn",
+     "text": "Your team is already using AI. The question is whether they're using it safely.\n\nEvery small company needs a 1-page AI policy. It only needs 4 parts:\n1. Approved tools and approved uses\n2. What never goes into public AI tools (customer data, passwords, confidential files)\n3. A human checks anything that goes to a customer\n4. One person owns AI questions, and the policy is reviewed every quarter\n\nOne page beats no page. Save this and share it with whoever runs your operations."
+    }
+   ]
+  },
+  {
+   "id": "J06",
+   "week": "2026-W44",
+   "account": "joshua",
+   "date": "2026-10-31",
+   "order": 5,
+   "series": "Tested this week",
+   "title": "3 AI updates from October and my honest verdict",
+   "format": "4-slide carousel",
+   "build": "needs-you",
+   "needs": "One line each on the October AI updates you tried: useful for ___ / not yet because ___.",
+   "tip": "",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:00"
+    },
+    {
+     "platform": "X",
+     "time": "08:30"
+    }
+   ],
+   "media": [],
+   "files": [],
+   "captions": [
+    {
+     "label": "LinkedIn (draft)",
+     "text": "3 AI updates landed this month. I tested them on real work, so you don't have to.\n[Update 1]: [your verdict]\n[Update 2]: [your verdict]\n[Update 3]: [your verdict]\nThe one I'll keep using: [pick]."
+    }
+   ]
+  },
+  {
+   "id": "J07",
+   "week": "2026-W44",
+   "account": "joshua",
+   "date": "2026-11-01",
+   "order": 6,
+   "series": "The bigger picture",
+   "title": "Africa doesn't need to catch up on AI. It needs to apply it.",
+   "format": "Quote card",
+   "build": "needs-you",
+   "needs": "Your edits to the Sunday opinion draft below, or your own version.",
+   "tip": "",
+   "times": [
+    {
+     "platform": "LinkedIn",
+     "time": "08:00"
+    },
+    {
+     "platform": "X",
+     "time": "08:30"
+    },
+    {
+     "platform": "Facebook",
+     "time": "12:30"
+    }
+   ],
+   "media": [],
+   "files": [],
+   "captions": [
+    {
+     "label": "LinkedIn (draft)",
+     "text": "Africa doesn't need to catch up on AI. It needs to apply it.\n\nWe don't have to build the biggest models to win. We have to be the best at using them:\nfor the trader, the clinic, the school, the small manufacturer.\n\nThe tools are on every phone already. What's missing is people who translate them into everyday work. That's the job I've chosen.\n\nWhat's one problem in your city that AI could actually fix?"
+    }
+   ]
+  }
+ ]
+}
