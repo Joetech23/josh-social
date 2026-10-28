@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../../">
+<meta name="es-size" content="1080x1350">
+<title>3D · argue bubble</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="design/icons/icons.css">
+<link rel="stylesheet" href="design/templates/bold.css">
+<style>
+  .bubble { width: 470px; right: -10px; top: 80px; transform: rotate(-6deg); }
+  .hl { font-size: 66px; margin-top: 400px; }
+  .lead { font-size: 27px; margin-top: 24px; max-width: 760px; }
+  .prompt { margin-top: 40px; padding: 30px 34px; border-radius: 26px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.16); max-width: 860px; }
+  .prompt .mono { font-size: 15px; color: var(--accent-300); display: flex; align-items: center; gap: 10px; }
+  .prompt p { margin: 14px 0 0; font-family: var(--font-mono); font-size: 25px; line-height: 1.5; color: #fff; letter-spacing: -0.01em; }
+  .prompt p b { color: var(--accent-300); font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="canvas vivid grid">
+  <div class="topbar">
+    <div class="brand"><img src="design/brand/eagle-white-mark.png" alt=""><span>EAGLESCROFT</span></div>
+    <div class="eyebrow">Cockpit chat</div>
+  </div>
+  <img class="obj bubble" src="design/3d/out/bubble.png" alt="">
+  <h2 class="hl"><span class="thin">Don’t ask AI if your<br>idea is good.</span><span class="heavy blue">Ask how it fails.</span></h2>
+  <p class="lead">The prompt we use before every big decision at Eaglescroft. Then a human decides.</p>
+  <div class="prompt"><span class="mono"><span class="ic i-bot"></span>Prompt to steal</span>
+    <p>Here’s my plan: <b>[paste plan]</b>. Act as a sceptical investor. Give me the <b>3 strongest reasons</b> it could fail, and what would prove each one wrong.</p>
+  </div>
+  <div class="footbar">
+    <div class="site"><span class="ic i-globe"></span>eaglescroft.com.ng</div>
+    <div class="socials">
+      <span><span class="ic i-linkedin"></span></span>
+      <span><span class="ic i-facebook"></span></span>
+      <span><span class="ic i-x"></span></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

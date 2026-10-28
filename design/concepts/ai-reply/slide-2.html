@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../../">
+<meta name="es-size" content="1080x1350">
+<title>Concept · AI reply · 2 question</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="design/icons/icons.css">
+<link rel="stylesheet" href="design/templates/bold.css">
+<style>
+  .canvas.paper { background: radial-gradient(70% 50% at 80% 0%, #FFFFFF 0%, #EEF2FB 55%, #E3EAF8 100%); color: var(--navy); }
+  .topbar .brand span { color: var(--navy); }
+  .hl { font-size: 70px; margin-top: 70px; color: var(--navy); }
+  .path { position: absolute; left: -40px; top: 420px; width: 1160px; height: 760px; z-index: 1; }
+  .opts { position: relative; z-index: 2; margin-top: 70px; display: grid; gap: 26px; }
+  .opt { display: flex; align-items: center; gap: 20px; width: 640px; padding: 30px 34px; border-radius: 22px;
+         font-family: var(--font-display); font-weight: 600; font-size: 31px; letter-spacing: -0.01em; color: #fff;
+         box-shadow: 0 2px 6px rgba(0,10,34,0.12), 0 22px 40px -14px rgba(0,10,34,0.4); }
+  .opt .n { width: 52px; height: 52px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center;
+            font-family: var(--font-mono); font-weight: 500; font-size: 22px; flex: none; }
+  .o1 { background: var(--accent); transform: rotate(-3deg); margin-left: 0; }
+  .o2 { background: var(--navy); transform: rotate(2deg); margin-left: 280px; }
+  .o3 { background: var(--accent); transform: rotate(-2deg); margin-left: 40px; }
+  .o4 { background: var(--navy); transform: rotate(2.5deg); margin-left: 240px; }
+  .ask { position: relative; z-index: 2; margin-top: 56px; font-size: 27px; font-weight: 500; color: var(--body); max-width: 760px; line-height: 1.45; }
+  .ask b { color: var(--navy); }
+</style>
+</head>
+<body>
+<div class="canvas paper grid on-light on-light-bar">
+  <div class="topbar">
+    <div class="brand"><img src="design/brand/eagle-navy-mark.png" alt=""><span>EAGLESCROFT</span></div>
+    <div class="eyebrow">Your turn</div>
+  </div>
+
+  <h2 class="hl"><span class="thin">What’s stopping you</span><span class="heavy blue">from automating?</span></h2>
+
+  <svg class="path" viewBox="0 0 1160 760" fill="none"><path d="M-20 40 C 260 -30, 420 180, 300 300 S 120 520, 520 520 S 1000 380, 960 560 S 860 700, 760 720" stroke="#2563EB" stroke-width="16" stroke-linecap="round" opacity="0.9"/></svg>
+
+  <div class="opts">
+    <div class="opt o1"><span class="n">1</span>I don’t know where to start</div>
+    <div class="opt o2"><span class="n">2</span>It sounds expensive</div>
+    <div class="opt o3"><span class="n">3</span>My customers want a human</div>
+    <div class="opt o4"><span class="n">4</span>I don’t trust AI with my data</div>
+  </div>
+
+  <p class="ask"><b>Comment your number.</b> We’ll answer every one of them, honestly, in this week’s posts.</p>
+  <div class="footbar">
+    <div class="site"><span class="ic i-globe"></span>eaglescroft.com.ng</div>
+    <div class="socials">
+      <span><span class="ic i-linkedin"></span></span>
+      <span><span class="ic i-facebook"></span></span>
+      <span><span class="ic i-x"></span></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

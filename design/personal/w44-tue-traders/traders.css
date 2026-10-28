@@ -1,0 +1,17 @@
+/* Joshua · Tue 27 Oct · AI for traders (notebook style + engagement rules) */
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap");
+.canvas.notebook { display: block; padding: 0; }
+.notebook .eyebrow { top: 96px; left: 150px; }
+.page { position: absolute; left: 150px; right: 84px; top: 160px; }
+.hand { font-family: "Caveat", cursive; }
+.step-no { font-family: var(--font-display); font-weight: 700; font-size: 140px; letter-spacing: -0.05em; color: var(--accent); line-height: 0.9; }
+.notebook .hl { font-size: 62px; margin-top: 10px; }
+.prompt { margin-top: 44px; padding: 30px 34px; border-radius: 18px; background: var(--navy); color: #fff; position: relative; }
+.prompt .mono { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--accent-300); }
+.prompt p { margin: 12px 0 0; font-family: var(--font-mono); font-size: 24px; line-height: 1.5; letter-spacing: -0.01em; }
+.arrow { font-family: "Caveat", cursive; font-weight: 700; color: var(--accent); font-size: 40px; display: flex; align-items: center; gap: 10px; }
+.arrow .ic { font-size: 40px; }
+.bubble { display: inline-block; max-width: 700px; padding: 20px 26px; border-radius: 24px; font-size: 28px; line-height: 1.4; font-weight: 500; box-shadow: 0 2px 4px rgba(0,30,96,.06), 0 16px 30px -16px rgba(0,30,96,.3); }
+.bubble.q { background: #fff; color: var(--ink); border-bottom-left-radius: 6px; }
+.bubble.a { background: var(--accent); color: #fff; border-bottom-right-radius: 6px; }
+.sig.small { bottom: 64px; }

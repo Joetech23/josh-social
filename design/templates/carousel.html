@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Paths resolve from the eaglescroft-socials root. In posts/YYYY-MM/<slug>/ use href="../../../" -->
+<base href="../../">
+<meta name="es-size" content="1080x1350">
+<title>Carousel · Ground School</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<style>
+  /* Render to PDF for a LinkedIn document post: one slide per page. */
+  @page { size: 1080px 1350px; margin: 0; }
+  .canvas { width: 1080px; height: 1350px; padding: 190px 84px 180px; break-after: page;
+            display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+  .canvas:last-child { break-after: auto; }
+  .watermark { width: 860px; right: -240px; bottom: -80px; }
+  .eyebrow { font-size: 21px; position: absolute; top: 96px; left: 84px; }
+  .headline { font-size: 72px; max-width: 900px; }
+  .headline.md { font-size: 60px; }
+  .lead { font-size: 34px; margin-top: 40px; max-width: 860px; }
+
+  /* PDF viewers draw hairline boxes around background-clip:text, so the
+     highlighted word is solid accent here (brand rule for non-HTML formats). */
+  .ink { background: none; color: var(--accent); }
+  .dark .ink, .deep .ink { background: none; color: var(--accent-300); }
+  .bignum { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.04em; font-size: 170px; line-height: 0.95;
+            color: var(--accent); margin-bottom: 36px; }
+  .example { align-self: stretch; margin-top: 64px; padding: 40px 44px; font-size: 34px; line-height: 1.45; color: var(--body); }
+  .example .mono { display: block; font-size: 17px; color: var(--accent); margin-bottom: 16px; }
+  .example b { color: var(--navy); font-weight: 600; }
+  .compare { display: grid; gap: 22px; margin-top: 64px; align-self: stretch; }
+  .compare .example { margin-top: 0; }
+  .compare .weak .mono { color: var(--faint); }
+  .compare .weak { color: var(--muted); }
+
+  .swipe { position: absolute; right: 84px; top: 96px; font-size: 17px; }
+  .light .swipe, .white .swipe { color: var(--faint); }
+  .dark .swipe, .deep .swipe { color: var(--on-dark-muted); }
+  .cta { margin-top: 56px; font-size: 30px; padding: 26px 44px; }
+
+  .brandbar { padding: 0 84px 64px; }
+  .brandbar .mark { height: 40px; }
+  .brandbar .left { display: flex; align-items: center; gap: 16px; }
+  .brandbar .mono { font-size: 17px; }
+  .brandbar .name { font-size: 20px; }
+</style>
+</head>
+<body>
+
+<!-- 1 · Cover -->
+<section class="canvas dark dots-dark">
+  <img class="watermark" src="design/brand/eagle-white-mark.png" alt="">
+  <span class="mono swipe">Swipe →</span>
+  <div class="eyebrow">Ground school</div>
+  <h1 class="headline">Brief your AI like a <span class="ink">new staff member</span>.</h1>
+  <p class="lead">Most bad AI answers come from bad briefs. Here’s the four-part brief we use at Eaglescroft every day.</p>
+  <div class="brandbar"><div class="left"><img class="mark" src="design/brand/eagle-white-mark.png" alt=""><span class="name">EAGLESCROFT</span></div><span class="mono">01 / 07</span></div>
+</section>
+
+<!-- 2–5 · One idea per slide -->
+<section class="canvas light dots">
+  <div class="eyebrow">Part one</div>
+  <div class="bignum">Role.</div>
+  <h2 class="headline md">Give it a job title.</h2>
+  <div class="example card"><span class="mono">Example</span><b>“You are an operations assistant for a home-care business in Abuja.”</b></div>
+  <div class="brandbar"><div class="left"><img class="mark" src="design/brand/eagle-navy-mark.png" alt=""><span class="name">EAGLESCROFT</span></div><span class="mono">02 / 07</span></div>
+</section>
+
+<section class="canvas light dots">
+  <div class="eyebrow">Part two</div>
+  <div class="bignum">Context.</div>
+  <h2 class="headline md">Give it what a new hire would need to know.</h2>
+  <div class="example card"><span class="mono">Example</span><b>“Our customers mostly message on WhatsApp, after work hours, and want a quick price and a visit date.”</b></div>
+  <div class="brandbar"><div class="left"><img class="mark" src="design/brand/eagle-navy-mark.png" alt=""><span class="name">EAGLESCROFT</span></div><span class="mono">03 / 07</span></div>
+</section>
+
+<section class="canvas light dots">
+  <div class="eyebrow">Part three</div>
+  <div class="bignum">Task.</div>
+  <h2 class="headline md">One clear job, with a finish line.</h2>
+  <div class="example card"><span class="mono">Example</span><b>“Write five reply templates for first-time enquiries. Each must end by offering two visit times.”</b></div>
+  <div class="brandbar"><div class="left"><img class="mark" src="design/brand/eagle-navy-mark.png" alt=""><span class="name">EAGLESCROFT</span></div><span class="mono">04 / 07</span></div>
+</section>
+
+<section class="canvas light dots">
+  <div class="eyebrow">Part four</div>
+  <div class="bignum">Format.</div>
+  <h2 class="headline md">Show it what good looks like.</h2>
+  <div class="example card"><span class="mono">Example</span><b>“Under 60 words each. Warm, plain English. No emoji. Return them as a numbered list.”</b></div>
+  <div class="brandbar"><div class="left"><img class="mark" src="design/brand/eagle-navy-mark.png" alt=""><span class="name">EAGLESCROFT</span></div><span class="mono">05 / 07</span></div>
+</section>
+
+<!-- 6 · Before / after -->
+<section class="canvas white dots">
+  <div class="eyebrow">Before and after</div>
+  <h2 class="headline md">Same tool. <span class="ink">Different brief.</span></h2>
+  <div class="compare">
+    <div class="example card weak"><span class="mono">Weak brief</span>“Write replies for my customers.”</div>
+    <div class="example card"><span class="mono">Strong brief</span><b>Role</b> + <b>Context</b> + <b>Task</b> + <b>Format</b>, in four sentences. You get replies you can send today, not a draft you have to rewrite.</div>
+  </div>
+  <div class="brandbar"><div class="left"><img class="mark" src="design/brand/eagle-navy-mark.png" alt=""><span class="name">EAGLESCROFT</span></div><span class="mono">06 / 07</span></div>
+</section>
+
+<!-- 7 · CTA -->
+<section class="canvas deep dots-dark">
+  <img class="watermark" src="design/brand/eagle-white-mark.png" alt="">
+  <div class="eyebrow">Your turn</div>
+  <h2 class="headline">Save this. Use it on your <span class="ink">next prompt</span>.</h2>
+  <p class="lead">Follow Eaglescroft for practical AI every week: real tools, real workflows, no hype.</p>
+  <span class="pill cta">Book a free call · eaglescroft.com.ng</span>
+  <div class="brandbar"><div class="left"><img class="mark" src="design/brand/eagle-white-mark.png" alt=""><span class="name">EAGLESCROFT</span></div><span class="mono">07 / 07</span></div>
+</section>
+
+</body>
+</html>

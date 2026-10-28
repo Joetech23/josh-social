@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../">
+<meta name="es-size" content="1500x500">
+<title>Cover · X header</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<style>
+  /* X places the avatar over the bottom-left (~0–420px wide, bottom ~200px): keep it clear. */
+  .canvas { width: 1500px; height: 500px; display: flex; align-items: center; justify-content: flex-end; padding: 0 110px 40px; }
+  .watermark { width: 760px; left: -120px; top: -150px; opacity: 0.07; }
+  .copy { max-width: 860px; }
+  .eyebrow { font-size: 18px; }
+  .headline { font-size: 54px; margin-top: 20px; }
+  .lead { font-size: 25px; margin-top: 18px; }
+  .chips { display: flex; gap: 10px; margin-top: 26px; flex-wrap: wrap; }
+  .chip { font-size: 14px; padding: 10px 16px; }
+</style>
+</head>
+<body>
+<div class="canvas dark dots-dark">
+  <img class="watermark" src="design/brand/eagle-white-mark.png" alt="">
+  <div class="copy">
+    <div class="eyebrow">Practical AI · Abuja to the world</div>
+    <h1 class="headline">We help businesses<br><span class="ink">fly online</span>.</h1>
+    <p class="lead">Real tools. Real workflows. No hype.</p>
+    <div class="chips">
+      <span class="chip">Websites</span><span class="chip">AI chatbots</span><span class="chip">Automation</span><span class="chip">CRM</span><span class="chip">Video</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

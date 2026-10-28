@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>html,body{margin:0;background:transparent;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">
+{ "imports": { "three": "./node_modules/three/build/three.module.js",
+               "three/addons/": "./node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<script type="module">
+import * as THREE from 'three';
+import { SVGLoader } from 'three/addons/loaders/SVGLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+const q = new URLSearchParams(location.search);
+const asset = q.get('asset') || 'eagle';
+const W = +(q.get('w') || 1200), H = +(q.get('h') || 1200);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(W, H);
+renderer.setClearColor(0x000000, 0);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+const camera = new THREE.PerspectiveCamera(30, W / H, 0.1, 100);
+camera.position.set(0, 0, 10);
+
+// Brand lighting: cool key, blue rim, soft fill
+const key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(-4, 6, 8); scene.add(key);
+const rim = new THREE.DirectionalLight(0x93C5FD, 3.0); rim.position.set(6, 2, -6); scene.add(rim);
+const fill = new THREE.DirectionalLight(0x3B82F6, 1.0); fill.position.set(4, -5, 4); scene.add(fill);
+
+const mat = (color, o = {}) => new THREE.MeshPhysicalMaterial(Object.assign({
+  color, metalness: 0.35, roughness: 0.22, clearcoat: 1, clearcoatRoughness: 0.08, envMapIntensity: 1.2 }, o));
+const NAVY = 0x001E60, BLUE = 0x2563EB, SKY = 0x93C5FD, WHITE = 0xF4F7FF;
+
+async function eagleShapes() {
+  const txt = await (await fetch('eagle.svg')).text();
+  const data = new SVGLoader().parse(txt);
+  const shapes = [];
+  for (const p of data.paths) shapes.push(...SVGLoader.createShapes(p));
+  return shapes;
+}
+function centerAndScale(obj, size) {
+  const box = new THREE.Box3().setFromObject(obj);
+  const s = size / Math.max(box.max.x - box.min.x, box.max.y - box.min.y);
+  obj.scale.multiplyScalar(s);
+  const box2 = new THREE.Box3().setFromObject(obj);
+  const c = box2.getCenter(new THREE.Vector3());
+  obj.position.sub(c);
+}
+async function eagleMesh(depth, color, extra = {}) {
+  const shapes = await eagleShapes();
+  const geo = new THREE.ExtrudeGeometry(shapes, { depth, bevelEnabled: true, bevelThickness: 14, bevelSize: 7, bevelSegments: 8, curveSegments: 48 });
+  const m = new THREE.Mesh(geo, mat(color, extra));
+  m.rotation.x = Math.PI; // SVG is y-down; a rotation (not a mirror) keeps faces pointing outwards
+  return m;
+}
+
+const root = new THREE.Group(); scene.add(root);
+
+if (asset === 'eagle') {
+  const m = await eagleMesh(150, BLUE, { metalness: 0.5, roughness: 0.16, envMapIntensity: 0.9 });
+  root.add(m); centerAndScale(root, 4.4);
+  root.rotation.set(-0.12, 0.5, 0.04);
+}
+if (asset === 'coin') {
+  const g = new THREE.Group();
+  const coin = new THREE.Mesh(new THREE.CylinderGeometry(2, 2, 0.42, 128), mat(BLUE, { metalness: 0.55, roughness: 0.2 }));
+  coin.rotation.x = Math.PI / 2; g.add(coin);
+  const rimRing = new THREE.Mesh(new THREE.TorusGeometry(1.86, 0.1, 32, 128), mat(SKY, { metalness: 0.6, roughness: 0.15 }));
+  rimRing.position.z = 0.22; g.add(rimRing);
+  const e = await eagleMesh(60, WHITE, { metalness: 0.15, roughness: 0.25 });
+  const eg = new THREE.Group(); eg.add(e); centerAndScale(eg, 2.5); eg.position.z += 0.3; eg.position.x += 0.06; g.add(eg);
+  root.add(g); root.rotation.set(0.12, -0.55, 0.06);
+  root.scale.setScalar(1.25);
+}
+if (asset === 'bubble') {
+  const shape = new THREE.Shape();
+  const w = 3.4, h = 2.3, r = 0.7;
+  shape.moveTo(-w/2 + r, -h/2); shape.lineTo(-w/2 + 0.9, -h/2); shape.lineTo(-w/2 + 0.2, -h/2 - 0.7); shape.lineTo(-w/2 + 0.45, -h/2);
+  shape.lineTo(w/2 - r, -h/2); shape.quadraticCurveTo(w/2, -h/2, w/2, -h/2 + r);
+  shape.lineTo(w/2, h/2 - r); shape.quadraticCurveTo(w/2, h/2, w/2 - r, h/2);
+  shape.lineTo(-w/2 + r, h/2); shape.quadraticCurveTo(-w/2, h/2, -w/2, h/2 - r);
+  shape.lineTo(-w/2, -h/2 + r); shape.quadraticCurveTo(-w/2, -h/2, -w/2 + r, -h/2);
+  const geo = new THREE.ExtrudeGeometry(shape, { depth: 0.55, bevelEnabled: true, bevelThickness: 0.18, bevelSize: 0.16, bevelSegments: 10, curveSegments: 32 });
+  geo.center();
+  const b = new THREE.Mesh(geo, mat(BLUE, { metalness: 0.25, roughness: 0.25 })); root.add(b);
+  for (let i = -1; i <= 1; i++) {
+    const d = new THREE.Mesh(new THREE.SphereGeometry(0.28, 48, 48), mat(WHITE, { metalness: 0.1, roughness: 0.3 }));
+    d.position.set(i * 0.85, 0.05, 0.5); d.scale.z = 0.6; root.add(d);
+  }
+  root.rotation.set(0.15, -0.5, 0.08);
+}
+if (asset === 'lock') {
+  const body = new THREE.Mesh(new RoundedBoxGeometry(3, 2.4, 1.1, 8, 0.35), mat(BLUE, { metalness: 0.4, roughness: 0.2 }));
+  body.position.y = -0.7; root.add(body);
+  const shackle = new THREE.Mesh(new THREE.TorusGeometry(0.95, 0.24, 32, 96, Math.PI), mat(SKY, { metalness: 0.9, roughness: 0.12 }));
+  shackle.position.y = 0.55; root.add(shackle);
+  for (const x of [-0.95, 0.95]) {
+    const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.24, 0.24, 0.7, 32), mat(SKY, { metalness: 0.9, roughness: 0.12 }));
+    leg.position.set(x, 0.25, 0); root.add(leg);
+  }
+  const hole = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 0.2, 32), mat(NAVY, { metalness: 0.2, roughness: 0.5 }));
+  hole.rotation.x = Math.PI / 2; hole.position.set(0, -0.55, 0.56); root.add(hole);
+  const slot = new THREE.Mesh(new RoundedBoxGeometry(0.16, 0.55, 0.2, 4, 0.06), mat(NAVY, { metalness: 0.2, roughness: 0.5 }));
+  slot.position.set(0, -0.95, 0.56); root.add(slot);
+  root.rotation.set(0.1, -0.5, 0.05); root.scale.setScalar(1.15);
+}
+
+renderer.render(scene, camera);
+document.title = 'done';
+</script>
+</body>
+</html>

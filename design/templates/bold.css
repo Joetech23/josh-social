@@ -1,0 +1,73 @@
+/* "Bold" social style: big weight-contrast type, one hero visual, floating UI chips,
+   grid texture and a pill footer bar. Builds on design/templates/shared.css. */
+
+.canvas { width: 1080px; height: 1350px; padding: 84px 80px; }
+
+/* Saturated brand-blue field (our answer to the references' vivid purple) */
+.canvas.vivid { color: #fff; background:
+  radial-gradient(60% 45% at 85% 20%, rgba(59,130,246,0.55) 0%, transparent 70%),
+  radial-gradient(50% 40% at 10% 95%, rgba(37,99,235,0.45) 0%, transparent 70%),
+  linear-gradient(160deg, #000F33 0%, #001E60 38%, #0A2F86 70%, #1D4ED8 100%); }
+.canvas.vivid .eyebrow { color: var(--accent-300); }
+.canvas.vivid .lead { color: rgba(255,255,255,0.72); }
+
+/* Grid texture, fading out */
+.grid::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-size: 90px 90px;
+  -webkit-mask-image: radial-gradient(90% 70% at 50% 40%, #000 0%, transparent 80%);
+          mask-image: radial-gradient(90% 70% at 50% 40%, #000 0%, transparent 80%); }
+.grid.on-light::after { background-image: linear-gradient(rgba(0,30,96,0.06) 1px, transparent 1px),
+                                          linear-gradient(90deg, rgba(0,30,96,0.06) 1px, transparent 1px); }
+.canvas > * { position: relative; z-index: 1; }
+
+/* Top bar: mark + name left, series right */
+.topbar { display: flex; justify-content: space-between; align-items: center; }
+.topbar .brand { display: flex; align-items: center; gap: 14px; }
+.topbar .brand img { height: 34px; }
+.topbar .brand span { font-family: var(--font-display); font-weight: 600; font-size: 17px; letter-spacing: 0.14em; }
+.eyebrow { font-size: 17px; }
+
+/* Weight-contrast headline: light lead-in, heavy payoff */
+.hl { font-family: var(--font-display); letter-spacing: -0.03em; line-height: 1.02; margin: 0; }
+.hl .thin { font-weight: 300; display: block; }
+.hl .heavy { font-weight: 700; display: block; }
+.hl .blue { color: var(--accent); }
+.vivid .hl .blue { color: var(--accent-300); }
+
+/* Icons: design/icons/icons.css (.ic .i-<name>) */
+
+/* Floating chips */
+.float { position: absolute; z-index: 3; display: flex; align-items: center; gap: 14px;
+  padding: 16px 22px 16px 16px; border-radius: 20px; background: #fff; color: var(--navy);
+  font-family: var(--font-body); font-weight: 600; font-size: 21px;
+  box-shadow: 0 2px 6px rgba(0,10,34,0.18), 0 24px 48px -12px rgba(0,10,34,0.45); }
+.float .tile { width: 46px; height: 46px; border-radius: 14px; display: flex; align-items: center; justify-content: center;
+  background: var(--accent); color: #fff; font-size: 24px; }
+.float small { display: block; font-weight: 500; font-size: 15px; color: var(--muted); margin-top: 2px; }
+
+/* Pill footer bar (site + socials) */
+.footbar { position: absolute; left: 80px; right: 80px; bottom: 64px; z-index: 4;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 16px 14px 26px; border-radius: 9999px;
+  background: #fff; color: var(--navy); box-shadow: 0 18px 40px -16px rgba(0,10,34,0.5); }
+.footbar .site { display: flex; align-items: center; gap: 12px; font-family: var(--font-body); font-weight: 600; font-size: 20px; }
+.footbar .site .ic { font-size: 22px; color: var(--accent); }
+.footbar .socials { display: flex; gap: 10px; }
+.footbar .socials > span { width: 46px; height: 46px; border-radius: 50%; background: var(--navy); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.on-light-bar .footbar { background: var(--navy); color: #fff; box-shadow: 0 18px 40px -16px rgba(0,10,34,0.35); }
+.on-light-bar .footbar .socials > span { background: rgba(255,255,255,0.12); }
+.on-light-bar .footbar .site .ic { color: var(--accent-300); }
+
+.swipe { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.18em; font-size: 15px; }
+
+/* Light "paper" field for variety between vivid slides */
+.canvas.paper { background: radial-gradient(70% 50% at 80% 0%, #FFFFFF 0%, #EEF2FB 55%, #E3EAF8 100%); color: var(--navy); }
+.canvas.paper .topbar .brand span, .canvas.paper .hl { color: var(--navy); }
+.canvas.paper .lead { color: var(--body); }
+
+/* 3D object from design/3d/out/ */
+.obj { position: absolute; z-index: 2; pointer-events: none; filter: drop-shadow(0 40px 50px rgba(0,5,20,0.45)); }
+.paper .obj { filter: drop-shadow(0 34px 40px rgba(0,30,96,0.25)); }

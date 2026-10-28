@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../">
+<meta name="es-size" content="1600x1000">
+<title>Device frames · demo</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="design/templates/devices.css">
+<style>
+  /* Drop REAL screenshots into design/inbox/ and point the <img class="shot"> at them. */
+  .stage { position: relative; width: 1600px; height: 1000px; overflow: hidden;
+    background: radial-gradient(60% 60% at 70% 30%, #EEF2FB 0%, #DFE7F7 100%); }
+  .laptop { position: absolute; left: 90px; top: 150px; }
+  .phone { position: absolute; right: 120px; top: 120px; transform: rotate(4deg); }
+  .cap { position: absolute; left: 90px; top: 60px; font-family: var(--font-mono); font-size: 16px; letter-spacing: .18em; text-transform: uppercase; color: var(--faint); }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="cap">Device frames · drop real screenshots into design/inbox/</div>
+  <div class="laptop"><div class="lid"><img class="shot" src="design/inbox/demo-laptop-shot.png" alt=""></div><div class="base"></div></div>
+  <div class="phone"><span class="btn p"></span><span class="btn v1"></span><span class="btn v2"></span><img class="shot fit" src="design/inbox/demo-phone-shot.png" alt=""></div>
+</div>
+</body>
+</html>

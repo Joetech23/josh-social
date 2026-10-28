@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../">
+<meta name="es-size" content="1600x1660">
+<title>Heading font comparison</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Montserrat:wght@500;600;700&display=swap">
+<style>
+  /* Same layout, same Raleway body. Only the heading family changes per row.
+     Cottorway Pro is a commercial font: it renders from the viewer's installed copy. */
+  .sheet { width: 1600px; padding: 64px 72px 56px; background: var(--wash); }
+  .sheet > header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 36px; }
+  .sheet > header h1 { font-family: var(--font-body); font-weight: 600; font-size: 34px; color: var(--navy); margin: 0; letter-spacing: -0.01em; }
+  .sheet > header .mono { font-size: 15px; color: var(--faint); }
+
+  .row { display: grid; grid-template-columns: 1fr 1fr; border-radius: 28px; overflow: hidden; margin-bottom: 28px;
+         box-shadow: var(--shadow-medium); position: relative; height: 470px; }
+  .row .panel { position: relative; padding: 54px 56px; overflow: hidden; }
+  .panel.dark { background: var(--grad-section-dark); color: var(--on-dark); }
+  .row .watermark { width: 520px; right: -150px; bottom: -110px; }
+  .tag { position: absolute; top: 22px; right: 26px; font-size: 13px; padding: 9px 14px; z-index: 2; }
+
+  .h { font-family: var(--h-font); font-weight: var(--h-weight); letter-spacing: var(--h-track); line-height: 1.04; margin: 0; }
+  .eyebrow { font-size: 15px; }
+  .hero-h { font-size: 62px; margin-top: 26px; color: #fff; }
+  .hero-p { font-size: 21px; margin-top: 22px; max-width: 560px; }
+
+  .light-panel { background: #fff; }
+  .card-h { font-size: 44px; color: var(--navy); }
+  .card-p { font-family: var(--font-body); font-size: 19px; line-height: 1.55; color: var(--body); margin: 16px 0 0; max-width: 600px; }
+  .stats { display: flex; gap: 44px; margin-top: 30px; }
+  .stat .n { font-family: var(--h-font); font-weight: 700; letter-spacing: -0.03em; font-size: 54px; color: var(--accent); line-height: 1; }
+  .stat .l { font-family: var(--font-body); font-size: 15px; color: var(--muted); margin-top: 8px; }
+  .cta { margin-top: 30px; font-size: 18px; padding: 15px 28px; }
+  .alpha { font-family: var(--h-font); font-weight: var(--h-weight); color: var(--faint); font-size: 20px; letter-spacing: 0.02em; margin-top: 26px; }
+
+  .missing { position: absolute; inset: 0; z-index: 5; display: none; align-items: center; justify-content: center; text-align: center;
+             background: var(--grad-deep); color: #fff; font-family: var(--font-body); font-size: 26px; line-height: 1.5; padding: 40px; }
+  .missing b { font-family: var(--font-display); font-weight: 600; display: block; font-size: 34px; margin-bottom: 8px; }
+  .row.is-missing .missing { display: flex; }
+
+  .sora       { --h-font: "Sora", sans-serif;       --h-weight: 600; --h-track: -0.03em; }
+  .montserrat { --h-font: "Montserrat", sans-serif; --h-weight: 600; --h-track: -0.025em; }
+  .cottorway  { --h-font: "Cottorway Pro", "Cottorway Pro Display", "Cottorway", sans-serif; --h-weight: 500; --h-track: -0.02em; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <h1>Eaglescroft heading font: which one flies?</h1>
+    <span class="mono">Body stays Raleway · Eyebrows stay JetBrains Mono</span>
+  </header>
+
+  <template id="row">
+    <div class="panel dark dots-dark">
+      <img class="watermark" src="design/brand/eagle-white-mark.png" alt="">
+      <div class="eyebrow">Digital growth partner</div>
+      <h2 class="h hero-h">We help businesses<br><span class="ink">fly online</span>.</h2>
+      <p class="lead hero-p">Websites, AI chatbots, automation and CRM, built to convert and live in weeks, not months.</p>
+      <div class="alpha">Aa Bb Gg Rr 0123456789 &amp; ?</div>
+    </div>
+    <div class="panel light-panel">
+      <h3 class="h card-h">From idea to lift-off.</h3>
+      <p class="card-p">We map the route, build the system and get you climbing. Every project runs on the same AI tools we teach, so you get practical results without the hype.</p>
+      <div class="stats">
+        <div class="stat"><div class="n">12,000+</div><div class="l">Leads scored</div></div>
+        <div class="stat"><div class="n">99%</div><div class="l">Satisfaction</div></div>
+        <div class="stat"><div class="n">4</div><div class="l">Countries</div></div>
+      </div>
+      <span class="pill cta">Start a Project →</span>
+    </div>
+  </template>
+
+  <section class="row sora"       data-font="Sora"          data-label="01 · Sora SemiBold 600"></section>
+  <section class="row montserrat" data-font="Montserrat"    data-label="02 · Montserrat SemiBold 600"></section>
+  <section class="row cottorway"  data-font="Cottorway Pro" data-label="03 · Cottorway Pro Medium 500"></section>
+</div>
+
+<script>
+  const tpl = document.getElementById('row');
+  document.querySelectorAll('.row').forEach(row => {
+    row.appendChild(tpl.content.cloneNode(true));
+    const tag = document.createElement('span');
+    tag.className = 'chip tag';
+    tag.textContent = row.dataset.label;
+    row.appendChild(tag);
+    const miss = document.createElement('div');
+    miss.className = 'missing';
+    miss.innerHTML = '<div><b>' + row.dataset.font + ' isn’t installed on this device.</b>Open this file in Chrome or Edge on the computer where it’s installed.</div>';
+    row.appendChild(miss);
+  });
+
+  // A font is present if text set in it measures differently from both generic fallbacks.
+  function installed(names) {
+    const c = document.createElement('canvas').getContext('2d');
+    const s = 'Eaglescroft flies online 0123456789';
+    const w = f => { c.font = '500 72px ' + f; return c.measureText(s).width; };
+    const mono = w('monospace'), serif = w('serif');
+    return names.some(n => w('"' + n + '", monospace') !== mono || w('"' + n + '", serif') !== serif);
+  }
+  document.fonts.ready.then(() => {
+    const row = document.querySelector('.row.cottorway');
+    if (!installed(['Cottorway Pro', 'Cottorway Pro Display', 'Cottorway'])) row.classList.add('is-missing');
+  });
+</script>
+</body>
+</html>

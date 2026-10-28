@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../">
+<meta name="es-size" content="1600x1000">
+<title>Eyebrow marker options</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<style>
+  .sheet { width: 1600px; padding: 60px 72px; background: var(--wash); }
+  .sheet > h1 { font-family: var(--font-display); font-weight: 600; font-size: 34px; color: var(--navy); margin: 0 0 8px; letter-spacing: -0.02em; }
+  .sheet > p { font-size: 19px; color: var(--body); margin: 0 0 34px; }
+  .opt { display: grid; grid-template-columns: 300px 1fr 1fr; gap: 0; border-radius: 24px; overflow: hidden; margin-bottom: 22px; box-shadow: var(--shadow-soft); background: #fff; }
+  .opt .info { padding: 34px 30px; border-right: 1px solid var(--border); }
+  .opt .info .mono { font-size: 13px; color: var(--accent); }
+  .opt .info h2 { font-family: var(--font-display); font-weight: 600; font-size: 26px; color: var(--navy); margin: 10px 0 8px; letter-spacing: -0.02em; }
+  .opt .info p { font-size: 16px; line-height: 1.5; color: var(--body); margin: 0; }
+  .demo { position: relative; padding: 38px 40px; overflow: hidden; }
+  .demo.dark { background: var(--grad-section-dark); }
+  .demo .headline { font-size: 40px; margin-top: 16px; }
+  .demo .small { margin-top: 26px; }
+  .demo .small .eyebrow { font-size: 11px; }
+  .eyebrow::before { display: none; } /* this sheet draws its own markers */
+  .mk { display: inline-block; flex: none; background: currentColor; -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
+  .fpm  { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='15' cy='11' r='4.6'/%3E%3Cpath d='M1.5 11H10.2M19.8 11H28.5M15 6.4V1.6'/%3E%3C/svg%3E"); width: 1.75em; height: 1.05em; }
+  .feat { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 16'%3E%3Cpath d='M1 1.2 L22 9.2 L17.6 9.6Z M4.2 6.4 L19.4 12 L15.4 12.3Z M7.4 11.2 L16.6 14.6 L13.4 14.8Z'/%3E%3C/svg%3E"); width: 1.75em; height: 1em; }
+  .lift { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 16' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1.5 14H15L31 3'/%3E%3Cpath d='M25.6 2.6 31 3 29.6 8.2'/%3E%3C/svg%3E"); width: 2.1em; height: 1em; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h1>Eyebrow marker: replacing the long dash.</h1>
+  <p>Each option shown at social size (21px) and website size (11px), on dark and light. The marker always takes the eyebrow's colour.</p>
+  <script>
+    const opts = [
+      ['fpm',  'A · Recommended', 'Flight marker', 'The flight-path symbol on a cockpit head-up display: where the aircraft is actually going. Our “eagle cockpit”.'],
+      ['feat', 'B', 'Wing feathers', 'Three tapered strokes echoing the eagle’s wing in the logo. Most ownable, softest at tiny sizes.'],
+      ['lift', 'C', 'Lift-off line', 'Runway, then climb. Says “from idea to lift-off” in one stroke. Most readable at 11px.'],
+    ];
+    for (const [cls, tag, name, desc] of opts) {
+      const ey = (sz) => `<div class="eyebrow" style="font-size:${sz}px"><span class="mk ${cls}"></span>Flight report</div>`;
+      document.write(`<section class="opt">
+        <div class="info"><span class="mono">${tag}</span><h2>${name}</h2><p>${desc}</p></div>
+        <div class="demo dark dots-dark">${ey(21)}<h3 class="headline">13,000 records. <span class="ink">12,000+ leads</span>.</h3><div class="small">${ey(11)}</div></div>
+        <div class="demo light dots">${ey(21)}<h3 class="headline">From idea to <span class="ink">lift-off</span>.</h3><div class="small">${ey(11)}</div></div>
+      </section>`);
+    }
+  </script>
+</div>
+</body>
+</html>

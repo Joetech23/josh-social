@@ -1,0 +1,6 @@
+{
+  "name": "eaglescroft-3d",
+  "private": true,
+  "description": "Renders Eaglescroft 3D brand objects (eagle, coin, bubble, lock) to transparent PNGs.",
+  "dependencies": { "three": "0.169.0" }
+}

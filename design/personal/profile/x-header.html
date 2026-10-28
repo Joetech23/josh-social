@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../../">
+<meta name="es-size" content="1500x500">
+<title>Joshua · X header</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="design/icons/icons.css">
+<link rel="stylesheet" href="design/templates/notebook.css">
+<style>
+  .canvas.notebook { display: block; padding: 0; background-image:
+      repeating-linear-gradient(180deg, transparent 0 39px, rgba(0,30,96,0.07) 39px 40px); }
+  .wrap { position: absolute; }
+  .notebook .eyebrow { position: static; }
+  .hl { font-family: var(--font-display); color: var(--navy); letter-spacing: -0.03em; line-height: 1.05; margin: 0; }
+  .notebook .hl .thin { font-weight: 300; display: inline; } .notebook .hl .heavy { font-weight: 700; display: inline; }
+  .tag { font-family: var(--font-body); font-weight: 500; color: var(--body); margin: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip.n { background: #fff; border: 1px solid var(--border-navy); color: var(--navy); box-shadow: var(--shadow-soft); }
+  .chip.n .ic { color: var(--accent); }
+  .note { position: absolute; padding: 18px 22px; }
+  .note h3 { margin: 0; font-size: 22px; display: flex; gap: 10px; align-items: center; }
+  .note h3 .ic { color: var(--accent); }
+  .note p { margin: 4px 0 0 32px; font-size: 16px; color: var(--body); font-weight: 500; }
+  .sign { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.16em; color: var(--faint); }
+  .blob { position: absolute; border-radius: 50%; background: radial-gradient(60% 60% at 35% 30%, #3B82F6 0%, #1D4ED8 55%, #001E60 100%); }
+  .blob::after { content: ""; position: absolute; inset: 18px; border-radius: 50%; border: 2px dashed rgba(255,255,255,0.28); }
+  .canvas.notebook { width: 1500px; height: 500px; }
+  .wrap { left: 470px; top: 90px; width: 760px; }
+  .notebook .eyebrow { font-size: 15px; }
+  .hl { font-size: 56px; margin-top: 16px; }
+  .tag { font-size: 22px; margin-top: 14px; }
+  .chips { margin-top: 24px; } .chip { font-size: 13px; padding: 10px 15px; }
+  .blob { width: 520px; height: 520px; right: -170px; top: -190px; }
+  .note { right: 90px; bottom: 70px; transform: rotate(-3deg); width: 320px; }
+  .sign { position: absolute; left: 470px; bottom: 30px; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="canvas notebook">
+  <div class="blob"></div>
+  <div class="wrap">
+    <div class="eyebrow">Founder &amp; CTO, EAGLESCROFT</div>
+    <h1 class="hl"><span class="thin">AI made simple,<br></span><span class="heavy">for <span class="mark-u">everyday</span> people.</span></h1>
+    <p class="tag">I run my business on AI, and show you how. No hype.</p>
+    <div class="chips">
+      <span class="chip n"><span class="ic i-message-circle"></span>Traders</span>
+      <span class="chip n"><span class="ic i-sparkles"></span>Academics</span>
+      <span class="chip n"><span class="ic i-zap"></span>Business owners</span>
+      <span class="chip n"><span class="ic i-shield-check"></span>Companies</span>
+    </div>
+  </div>
+  <div class="note"><h3><span class="ic i-zap"></span>New post every day</h3><p>What I built + how you can use it</p></div>
+</div>
+</body></html>

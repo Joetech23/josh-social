@@ -1,0 +1,37 @@
+/* "The notebook": Joshua Obaje's personal visual style. Builds on shared.css. */
+.canvas.notebook { width: 1080px; height: 1350px; padding: 170px 84px 190px 150px; color: var(--navy);
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+  background-color: #F7F8FC;
+  background-image:
+    linear-gradient(90deg, transparent 112px, rgba(37,99,235,0.35) 112px, rgba(37,99,235,0.35) 114px, transparent 114px),
+    repeating-linear-gradient(180deg, transparent 0 53px, rgba(0,30,96,0.07) 53px 54px); }
+.notebook .hl { font-family: var(--font-display); letter-spacing: -0.03em; line-height: 1.06; margin: 0; color: var(--navy); }
+.notebook .hl .thin { font-weight: 300; display: block; }
+.notebook .hl .heavy { font-weight: 700; display: block; }
+.notebook .lead { font-size: 28px; line-height: 1.5; color: var(--body); font-weight: 500; }
+.notebook .eyebrow { font-size: 18px; position: absolute; top: 96px; left: 150px; }
+
+/* Hand-drawn marker underline / circle (SVG behind the word) */
+.mark-u { position: relative; white-space: nowrap; z-index: 0; }
+.mark-u::after { content: ""; position: absolute; left: -2%; right: -4%; bottom: -0.12em; height: 0.36em; z-index: -1;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30' preserveAspectRatio='none'%3E%3Cpath d='M4 20 C 60 9, 120 24, 180 13 S 270 10, 296 16' fill='none' stroke='%232563EB' stroke-width='9' stroke-linecap='round' opacity='0.85'/%3E%3C/svg%3E") center / 100% 100% no-repeat; }
+
+/* Sticky note card with tape */
+.note { position: relative; background: #fff; border-radius: 10px; padding: 40px 44px; box-shadow: 0 2px 4px rgba(0,30,96,0.06), 0 24px 44px -18px rgba(0,30,96,0.28); }
+.note::before { content: ""; position: absolute; top: -18px; left: 50%; width: 150px; height: 36px; transform: translateX(-50%) rotate(-3deg);
+  background: rgba(147,197,253,0.55); border-radius: 4px; }
+.note h3 { font-family: var(--font-display); font-weight: 600; font-size: 34px; letter-spacing: -0.02em; margin: 0 0 18px; color: var(--navy); }
+.note ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.note li { display: flex; gap: 16px; align-items: flex-start; font-size: 27px; line-height: 1.4; color: var(--ink); font-weight: 500; }
+.note li .ic { font-size: 30px; color: var(--accent); margin-top: 3px; }
+.note li.no .ic { color: var(--navy-400); }
+
+/* Signature corner */
+.sig { position: absolute; left: 150px; right: 84px; bottom: 72px; display: flex; align-items: center; justify-content: space-between; }
+.sig .who { display: flex; align-items: center; gap: 16px; }
+.sig .av { width: 64px; height: 64px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 600; font-size: 22px; letter-spacing: 0.04em; overflow: hidden; box-shadow: 0 0 0 4px #fff, 0 0 0 6px rgba(37,99,235,0.35); }
+.sig .av img { width: 100%; height: 100%; object-fit: cover; }
+.sig b { display: block; font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--navy); }
+.sig small { font-family: var(--font-mono); font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--faint); }
+.sig .page { font-family: var(--font-mono); font-size: 16px; letter-spacing: 0.18em; color: var(--faint); }

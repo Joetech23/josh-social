@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../../">
+<meta name="es-size" content="1080x1350">
+<title>3D · data lock</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="design/icons/icons.css">
+<link rel="stylesheet" href="design/templates/bold.css">
+<style>
+  .lock { width: 400px; right: 30px; top: 70px; transform: rotate(8deg); }
+  .hl { font-size: 62px; margin-top: 330px; max-width: 760px; }
+  .qs { margin-top: 32px; display: grid; gap: 12px; }
+  .q { display: flex; align-items: center; gap: 18px; width: fit-content; padding: 16px 26px 16px 16px; border-radius: 18px; background: #fff;
+       border: 1px solid var(--border-navy); box-shadow: var(--shadow-soft); font-family: var(--font-display); font-weight: 600; font-size: 26px; color: var(--navy); letter-spacing: -0.01em; }
+  .q .n { width: 44px; height: 44px; border-radius: 12px; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center;
+          font-family: var(--font-mono); font-size: 18px; font-weight: 500; flex: none; }
+  .q:nth-child(odd) .n { background: var(--accent); }
+</style>
+</head>
+<body>
+<div class="canvas paper grid on-light on-light-bar">
+  <div class="topbar">
+    <div class="brand"><img src="design/brand/eagle-navy-mark.png" alt=""><span>EAGLESCROFT</span></div>
+    <div class="eyebrow">Ground school</div>
+  </div>
+  <img class="obj lock" src="design/3d/out/lock.png" alt="">
+  <h2 class="hl"><span class="thin">Before you plug AI into your business,</span><span class="heavy blue">ask these 5 questions.</span></h2>
+  <div class="qs">
+    <div class="q"><span class="n">01</span>Who can see our data?</div>
+    <div class="q"><span class="n">02</span>Is it stored, or used for training?</div>
+    <div class="q"><span class="n">03</span>Is every action logged?</div>
+    <div class="q"><span class="n">04</span>Who is accountable when it’s wrong?</div>
+    <div class="q"><span class="n">05</span>Can we switch it off tomorrow?</div>
+  </div>
+  <div class="footbar">
+    <div class="site"><span class="ic i-globe"></span>eaglescroft.com.ng</div>
+    <div class="socials">
+      <span><span class="ic i-linkedin"></span></span>
+      <span><span class="ic i-facebook"></span></span>
+      <span><span class="ic i-x"></span></span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

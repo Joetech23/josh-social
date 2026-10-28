@@ -1,0 +1,107 @@
+/* Eaglescroft social graphics: shared tokens + building blocks.
+   Values mirror the Eaglescroft brand system. Do not hand-type new colours. */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@500;600;700&family=Raleway:wght@400;500;600&display=swap");
+
+:root {
+  --navy: #001E60; --navy-600: #001A54; --navy-900: #000A22; --navy-400: #2F5AA3;
+  --navy-50: #E6EBF5; --navy-100: #C0CDE6;
+  --accent: #2563EB; --accent-500: #1D4ED8; --accent-300: #93C5FD; --accent-100: #DBEAFE; --accent-50: #EFF6FF;
+  --indigo: #2A3F8F;
+  --ink: #0B1530; --body: #48526E; --muted: #5A6685; --faint: #7A86A3;
+  --wash: #F4F6FB; --wash-hero: #EEF2FB; --border: #E7EAF3; --border-navy: rgba(0,30,96,0.10);
+  --dark: #020A24; --dark-2: #030D2E;
+  --on-dark: rgba(255,255,255,0.92); --on-dark-muted: rgba(255,255,255,0.62);
+
+  --grad-deep: linear-gradient(135deg, #000A22 0%, #001E60 45%, #2A3F8F 100%);
+  --grad-section-dark: radial-gradient(70% 50% at 50% 0%, rgba(37,99,235,0.18) 0%, transparent 60%),
+                       linear-gradient(180deg, #030D2E 0%, #001033 55%, #020A24 100%);
+  --grad-hero-wash: radial-gradient(120% 90% at 80% 0%, #FFFFFF 0%, #EEF2FB 42%, #DFE7F7 100%);
+  --grad-cta: linear-gradient(180deg, #3B76F0 0%, #1D4ED8 100%);
+  --grad-text: linear-gradient(100deg, #1D4ED8, #2563EB 60%, #3B82F6);
+  --grad-text-dark: linear-gradient(100deg, #93C5FD, #60A5FA 50%, #3B82F6);
+
+  --font-display: "Sora", system-ui, sans-serif;
+  --font-body: "Raleway", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --shadow-soft: 0 1px 2px rgba(9,30,66,0.06), 0 8px 24px rgba(9,30,66,0.08);
+  --shadow-medium: 0 2px 4px rgba(9,30,66,0.06), 0 18px 40px rgba(9,30,66,0.12);
+  --shadow-accent: 0 10px 30px rgba(37,99,235,0.45), inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: var(--font-body); color: var(--ink); -webkit-font-smoothing: antialiased; background: #fff; }
+
+/* A canvas = one exported image. Size it per template. */
+.canvas { position: relative; overflow: hidden; }
+.canvas.dark  { background: var(--grad-section-dark); color: var(--on-dark); }
+.canvas.deep  { background: var(--grad-deep); color: var(--on-dark); }
+.canvas.light { background: var(--grad-hero-wash); color: var(--ink); }
+.canvas.white { background: #fff; color: var(--ink); }
+
+/* Dot-grid texture, masked to fade */
+.dots::before, .dots-dark::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(80% 70% at 70% 20%, #000 0%, transparent 75%);
+          mask-image: radial-gradient(80% 70% at 70% 20%, #000 0%, transparent 75%);
+}
+.dots::before      { background-image: radial-gradient(rgba(0,30,96,0.13) 1.4px, transparent 1.6px); }
+.dots-dark::before { background-image: radial-gradient(rgba(255,255,255,0.10) 1.4px, transparent 1.6px); }
+
+/* Eagle watermark (eagle PNGs carry padding; these offsets compensate) */
+.watermark { position: absolute; pointer-events: none; opacity: 0.06; }
+
+/* Type */
+.eyebrow {
+  font-family: var(--font-mono); font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.2em; color: var(--accent);
+  display: inline-flex; align-items: center; gap: 0.7em;
+}
+/* The flight marker (HUD flight-path symbol) leads every eyebrow. Source: design/brand/flight-marker.svg */
+:root { --flight-marker: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 18' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='15' cy='11' r='4.6'/%3E%3Cpath d='M1.5 11H10.2M19.8 11H28.5M15 6.4V1.6'/%3E%3C/svg%3E"); }
+.eyebrow::before { content: ""; flex: none; width: 1.75em; height: 1.05em; background: currentColor;
+  -webkit-mask: var(--flight-marker) center / contain no-repeat; mask: var(--flight-marker) center / contain no-repeat; }
+.dark .eyebrow, .deep .eyebrow { color: var(--accent-300); }
+
+/* Headlines sit at the H2 tier by default: confident, not shouting. */
+.headline { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.025em; line-height: 1.08; margin: 0; }
+.dark .headline, .deep .headline { color: #fff; }
+.light .headline, .white .headline { color: var(--navy); }
+.ink { background: var(--grad-text); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.dark .ink, .deep .ink { background-image: var(--grad-text-dark); }
+
+.lead { font-family: var(--font-body); font-weight: 500; line-height: 1.45; margin: 0; }
+.dark .lead, .deep .lead { color: var(--on-dark-muted); }
+.light .lead, .white .lead { color: var(--body); }
+
+.mono { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.16em; }
+
+/* Pills and cards */
+.pill {
+  display: inline-flex; align-items: center; gap: 0.5em; border-radius: 9999px;
+  font-family: var(--font-body); font-weight: 600;
+  background: var(--grad-cta); color: #fff; box-shadow: var(--shadow-accent);
+}
+.chip {
+  display: inline-flex; align-items: center; gap: 0.5em; border-radius: 9999px;
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500;
+  border: 1px solid var(--border-navy); background: rgba(255,255,255,0.7); color: var(--navy);
+}
+.dark .chip, .deep .chip { border-color: rgba(255,255,255,0.16); background: rgba(255,255,255,0.06); color: var(--on-dark); }
+.dot-live { width: 0.55em; height: 0.55em; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 0.3em rgba(37,99,235,0.2); }
+
+.card {
+  background: #fff; border: 1px solid var(--border-navy); border-radius: 24px; box-shadow: var(--shadow-soft);
+}
+.dark .card, .deep .card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.12); box-shadow: none; }
+
+/* Footer brand bar */
+.brandbar { position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: space-between; }
+.brandbar img { display: block; }
+.brandbar .mono { color: var(--faint); }
+/* The name standing alone is always capitals: EAGLESCROFT */
+.brandbar .name { font-family: var(--font-display); font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy); }
+.dark .brandbar .name, .deep .brandbar .name { color: #fff; }
+.dark .brandbar .mono, .deep .brandbar .mono { color: var(--on-dark-muted); }

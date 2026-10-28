@@ -1,0 +1,19 @@
+id,slug,pillar,title,platforms,status,planned_date,published_date,url_linkedin,url_facebook,url_x,impressions,engagements,saves_shares,comments,follows,notes
+001,lift-off,HN,We don't just talk about AI. We run on it.,LI;FB;X,superseded-by-005,2026-10-27,,,,,,,,,,Pinned intro post
+002,brief-your-ai,GS,Brief your AI like a new staff member,LI;X,idea,,,,,,,,,,,Carousel + thread
+003,lead-engine,FR,13000 raw records to 12000+ scored leads,LI;FB;X,superseded-by-006,2026-10-29,,,,,,,,,,Anonymise client
+004,ai-video-agent,HN,What we're building: an AI agent that makes product videos,LI;FB;X,idea,,,,,,,,,,,
+005,w44-mon-launch-coin,HN,We don't just talk about AI. We run on it.,LI;FB;X,ready,2026-10-26,,,,,,,,,,design/concepts/3d-set/post-1.png
+006,w44-tue-lead-engine,FR,13000 raw records to 12000+ scored leads,LI;FB;X,build,2026-10-27,,,,,,,,,,Carousel
+007,w44-wed-video-workflow,GS,Edit faster without cutting corners: our AI-assisted video workflow,LI;FB;X,ready,2026-10-28,,,,,,,,,,posts/2026-10/007-w44-wed-video-workflow (illustrated timeline; swap in real screenshots later)
+008,w44-thu-ghl-ai-employee,OR,GoHighLevel AI Employee explained,LI;FB;X,build,2026-10-29,,,,,,,,,,Verify pricing before posting
+009,w44-fri-argue-bubble,CC,Ask AI how it fails,LI;FB;X,ready,2026-10-30,,,,,,,,,,posts/2026-10/009-w44-fri-argue-bubble
+010,w44-sat-whatsapp-ai,GS,Your business never sleeps,LI;FB;X,ready,2026-10-31,,,,,,,,,,posts/2026-10/010-w44-sat-whatsapp-ai (+ LinkedIn PDF)
+011,w44-sun-5-questions,GS,Before you plug AI in ask these 5 questions,LI;FB;X,ready,2026-11-01,,,,,,,,,,posts/2026-10/011-w44-sun-5-questions
+J01,w44-mon-intro,JTB,I run my business on AI,LI-personal;X;FB,ready,2026-10-26,,,,,,,,,,posts/2026-10/J01-w44-mon-intro
+J02,w44-tue-traders,JAF,3 free ways traders use AI on WhatsApp,LI-personal;X;FB,ready,2026-10-27,,,,,,,,,,Pidgin FB
+J03,w44-wed-academics,JAF,AI for literature review without cheating,LI-personal;X,ready,2026-10-28,,,,,,,,,,posts/2026-10/J03-w44-wed-academics (+ LinkedIn PDF)
+J04,w44-thu-shipped,JTB,What I shipped today: AI video agent,LI-personal;X,needs-resources,2026-10-29,,,,,,,,,,Screenshot + notes
+J05,w44-fri-ai-policy,JAF,The 1-page AI policy,LI-personal;X;FB,build,2026-10-30,,,,,,,,,,
+J06,w44-sat-tested,JTW,3 AI updates from October,LI-personal;X,needs-verdict,2026-10-31,,,,,,,,,,
+J07,w44-sun-bigger-picture,JBP,Africa doesn't need to catch up on AI,LI-personal;X;FB,needs-verdict,2026-11-01,,,,,,,,,,

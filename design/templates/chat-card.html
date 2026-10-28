@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Paths resolve from the eaglescroft-socials root. In posts/YYYY-MM/<slug>/ use href="../../../" -->
+<base href="../../">
+<meta name="es-size" content="1080x1350">
+<title>Post · Cockpit Chat</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<style>
+  .canvas { width: 1080px; height: 1350px; padding: 92px 84px; }
+  .watermark { width: 820px; left: -260px; bottom: -40px; }
+  .eyebrow { font-size: 21px; }
+  .headline { font-size: 60px; margin-top: 34px; max-width: 900px; }
+
+  .thread { margin-top: 56px; display: grid; gap: 22px; }
+  .msg { max-width: 820px; padding: 30px 36px; border-radius: 28px; font-size: 29px; line-height: 1.42; font-weight: 500; }
+  .msg .who { display: block; font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.18em; font-size: 15px; margin-bottom: 12px; font-weight: 500; }
+  .us { justify-self: end; background: var(--grad-cta); color: #fff; border-bottom-right-radius: 8px; }
+  .us .who { color: rgba(255,255,255,0.75); }
+  .ai { justify-self: start; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); color: var(--on-dark); border-bottom-left-radius: 8px; }
+  .ai .who { color: var(--accent-300); }
+
+  .takeaway { margin-top: 44px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.12); }
+  .takeaway .mono { font-size: 16px; color: var(--accent-300); }
+  .takeaway p { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.02em; font-size: 32px; line-height: 1.25; color: #fff; margin: 12px 0 0; max-width: 880px; }
+
+  .brandbar { padding: 0 84px 64px; }
+  .brandbar .mark { height: 40px; }
+  .brandbar .left { display: flex; align-items: center; gap: 16px; }
+  .brandbar .mono { font-size: 17px; }
+  .brandbar .name { font-size: 20px; }
+</style>
+</head>
+<body>
+<div class="canvas deep dots-dark">
+  <img class="watermark" src="design/brand/eagle-white-mark.png" alt="">
+
+  <div class="eyebrow">Cockpit chat</div>
+  <h1 class="headline">Ask AI to<br><span class="ink">argue against you</span>.</h1>
+
+  <div class="thread">
+    <div class="msg us"><span class="who">EAGLESCROFT</span>Here’s our plan for the campaign. Before we commit: what are the three strongest reasons it could fail?</div>
+    <div class="msg ai"><span class="who">AI assistant</span>1. The audience is too broad for the timeline.<br>2. The offer needs trust you haven’t built yet.<br>3. Nobody owns follow-up after sign-up.</div>
+    <div class="msg us"><span class="who">EAGLESCROFT</span>Good. Number 3 is real. Draft a follow-up sequence we can own.</div>
+  </div>
+
+  <div class="takeaway">
+    <span class="mono">The pattern to steal</span>
+    <p>Don’t ask AI if your idea is good. Ask how it fails, then decide yourself.</p>
+  </div>
+
+  <div class="brandbar">
+    <div class="left">
+      <img class="mark" src="design/brand/eagle-white-mark.png" alt="Eaglescroft">
+      <span class="name">EAGLESCROFT</span>
+    </div>
+    <span class="mono">eaglescroft.com.ng</span>
+  </div>
+</div>
+</body>
+</html>

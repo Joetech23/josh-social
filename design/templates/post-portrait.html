@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Paths resolve from the eaglescroft-socials root. In posts/YYYY-MM/<slug>/ use href="../../../" -->
+<base href="../../">
+<meta name="es-size" content="1080x1350">
+<title>Post · Portrait (Flight Report)</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<style>
+  .canvas { width: 1080px; height: 1350px; padding: 92px 84px; }
+  .watermark { width: 760px; right: -200px; top: -60px; opacity: 0.05; }
+  .eyebrow { font-size: 21px; }
+  .headline { font-size: 64px; margin-top: 36px; max-width: 900px; }
+  .lead { font-size: 30px; margin-top: 30px; max-width: 860px; }
+
+  .steps { display: grid; gap: 22px; margin-top: 58px; }
+  .step { display: grid; grid-template-columns: 92px 1fr; gap: 28px; align-items: start; padding: 34px 38px; }
+  .num {
+    width: 92px; height: 92px; border-radius: 22px; background: var(--navy); color: var(--accent-300);
+    font-family: var(--font-mono); font-weight: 500; font-size: 26px; letter-spacing: 0.08em;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step .label { font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.18em; font-size: 16px; color: var(--accent); font-weight: 500; }
+  .step h3 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.02em; color: var(--navy); font-size: 30px; line-height: 1.2; margin: 10px 0 0; }
+  .step.result { background: var(--navy); border-color: var(--navy); }
+  .step.result .num { background: var(--accent); color: #fff; }
+  .step.result .label { color: var(--accent-300); }
+  .step.result h3 { color: #fff; }
+
+  .brandbar { padding: 0 84px 64px; }
+  .brandbar .mark { height: 40px; }
+  .brandbar .left { display: flex; align-items: center; gap: 16px; }
+  .brandbar .mono { font-size: 17px; }
+  .brandbar .name { font-size: 20px; }
+</style>
+</head>
+<body>
+<div class="canvas light dots">
+  <img class="watermark" src="design/brand/eagle-navy-mark.png" alt="">
+
+  <div class="eyebrow">Flight report</div>
+  <h1 class="headline">13,000 raw records.<br><span class="ink">12,000+ scored leads</span>.</h1>
+  <p class="lead">How we turned a messy prospect list into a ranked pipeline, with a tailored outreach hook for every lead.</p>
+
+  <div class="steps">
+    <div class="step card">
+      <div class="num">01</div>
+      <div><div class="label">The problem</div><h3>A huge list nobody could prioritise or personalise by hand.</h3></div>
+    </div>
+    <div class="step card">
+      <div class="num">02</div>
+      <div><div class="label">The AI approach</div><h3>Clean, enrich and score every record, then let an audit engine write each hook.</h3></div>
+    </div>
+    <div class="step card result">
+      <div class="num">03</div>
+      <div><div class="label">The result</div><h3>A ranked pipeline the team can work from on day one.</h3></div>
+    </div>
+  </div>
+
+  <div class="brandbar">
+    <div class="left">
+      <img class="mark" src="design/brand/eagle-navy-mark.png" alt="Eaglescroft">
+      <span class="name">EAGLESCROFT</span>
+    </div>
+    <span class="mono">eaglescroft.com.ng</span>
+  </div>
+</div>
+</body>
+</html>

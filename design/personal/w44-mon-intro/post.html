@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../../">
+<meta name="es-size" content="1080x1350">
+<title>Joshua · W44 Mon · Intro</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="design/icons/icons.css">
+<link rel="stylesheet" href="design/templates/notebook.css">
+<style>
+  .canvas.notebook { display: block; padding: 0; }
+  .eyebrow { top: 96px; }
+  .hl { position: absolute; left: 150px; top: 160px; font-size: 70px; max-width: 840px; }
+  .lead { position: absolute; left: 150px; top: 400px; max-width: 640px; font-size: 27px; margin: 0; }
+
+  /* Portrait: blue disc behind a cut-out, bleeding off the bottom */
+  .disc { position: absolute; right: -90px; bottom: -160px; width: 760px; height: 760px; border-radius: 50%;
+    background: radial-gradient(60% 60% at 35% 30%, #3B82F6 0%, #1D4ED8 55%, #001E60 100%);
+    box-shadow: 0 40px 80px -30px rgba(0,30,96,0.5); }
+  .disc::after { content: ""; position: absolute; inset: 26px; border-radius: 50%; border: 2px dashed rgba(255,255,255,0.25); }
+  .portrait { position: absolute; right: -40px; bottom: 0; width: 700px; z-index: 2; filter: drop-shadow(0 20px 30px rgba(0,10,34,0.35)); }
+
+  /* Sticky notes: what's coming */
+  .note { position: absolute; z-index: 3; padding: 22px 26px; width: 380px; }
+  .note h3 { font-size: 25px; margin: 0; display: flex; gap: 12px; align-items: center; }
+  .note h3 .ic { color: var(--accent); font-size: 28px; }
+  .note p { margin: 6px 0 0 40px; font-size: 20px; color: var(--body); font-weight: 500; line-height: 1.35; }
+  .n1 { left: 130px; top: 610px; transform: rotate(-3deg); }
+  .n2 { left: 170px; top: 800px; transform: rotate(2deg); }
+  .n3 { left: 120px; top: 985px; transform: rotate(-1.5deg); }
+
+  .sig { left: 150px; right: auto; bottom: 64px; z-index: 3; }
+  .sig b { font-size: 26px; }
+  .handle { position: absolute; left: 150px; bottom: 28px; font-family: var(--font-mono); font-size: 14px; letter-spacing: 0.16em; color: var(--faint); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="canvas notebook">
+  <div class="eyebrow">Day one</div>
+  <h1 class="hl"><span class="thin">For years I kept my profile quiet.</span><span class="heavy">That changes <span class="mark-u">today.</span></span></h1>
+  <p class="lead">I run my business on AI. From today, I’ll show you how, every day, in plain language.</p>
+
+  <div class="disc"></div>
+  <img class="portrait" src="design/personal/photos/joshua-cutout.png" alt="Joshua Obaje">
+
+  <div class="note n1"><h3><span class="ic i-zap"></span>What I built today</h3><p>And what broke along the way</p></div>
+  <div class="note n2"><h3><span class="ic i-message-circle"></span>AI for real people</h3><p>Traders, lecturers, teams and companies</p></div>
+  <div class="note n3"><h3><span class="ic i-sparkles"></span>Updates that matter</h3><p>Tested on real work, no hype</p></div>
+
+  <div class="sig"><div class="who"><div><b>Joshua Obaje</b><small>Founder &amp; CTO, EAGLESCROFT</small></div></div></div>
+</div>
+</body>
+</html>

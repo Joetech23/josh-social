@@ -1,0 +1,29 @@
+/* Device frames for REAL screenshots: <div class="phone"><img class="shot" src="..."></div>
+   Screenshots must be genuine captures of the real app (blur private data). */
+.phone { position: relative; width: 420px; aspect-ratio: 9 / 19.5; border-radius: 68px; padding: 14px;
+  background: linear-gradient(145deg, #3a3f4b 0%, #14171d 35%, #2b303a 60%, #0d0f13 100%);
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,0.10), 0 2px 0 1px rgba(255,255,255,0.05),
+              0 50px 90px -24px rgba(0,5,20,0.65), 0 20px 40px -20px rgba(0,5,20,0.5); }
+.phone::before { content: ""; position: absolute; top: 30px; left: 50%; width: 118px; height: 34px; transform: translateX(-50%);
+  background: #000; border-radius: 20px; z-index: 3; }                      /* camera island */
+.phone::after { content: ""; position: absolute; inset: 14px; border-radius: 54px; z-index: 2; pointer-events: none;
+  background: linear-gradient(115deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 32%); }   /* glass glare */
+.phone .btn { position: absolute; width: 5px; background: #20242c; border-radius: 3px; }
+.phone .btn.p { right: -4px; top: 210px; height: 100px; }
+.phone .btn.v1 { left: -4px; top: 180px; height: 64px; }
+.phone .btn.v2 { left: -4px; top: 260px; height: 64px; }
+.phone .shot, .phone .screen { display: block; width: 100%; height: 100%; border-radius: 54px; object-fit: cover; object-position: top; background: #fff; overflow: hidden; }
+
+.laptop { position: relative; width: 900px; }
+.laptop .lid { background: #11141a; border-radius: 26px 26px 0 0; padding: 22px 22px 26px; box-shadow: inset 0 0 0 2px rgba(255,255,255,0.08); }
+.laptop .shot { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; border-radius: 6px; background: #fff; }
+.laptop .base { height: 26px; margin: 0 -60px; border-radius: 0 0 30px 30px;
+  background: linear-gradient(180deg, #d9dde6 0%, #aab1bf 100%); box-shadow: 0 30px 50px -20px rgba(0,5,20,0.5); }
+.laptop .base::before { content: ""; display: block; width: 160px; height: 10px; margin: 0 auto; border-radius: 0 0 10px 10px; background: #8d95a4; }
+
+/* Logo tile: an official brand logo on a white tile (never recolour the logo) */
+.logo-tile { display: flex; align-items: center; justify-content: center; background: #fff; border-radius: 28%;
+  box-shadow: 0 2px 6px rgba(0,10,34,0.14), 0 22px 40px -14px rgba(0,10,34,0.45); }
+.logo-tile img { width: 56%; height: 56%; object-fit: contain; }
+/* For images that aren't phone-shaped (e.g. a feed post): show whole, centred on a light screen */
+.phone .shot.fit, .laptop .shot.fit { object-fit: contain; object-position: center; background: #F4F6FB; }

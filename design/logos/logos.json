@@ -1,0 +1,157 @@
+{
+  "claude": {
+    "title": "Claude",
+    "hex": "D97757",
+    "guidelines": ""
+  },
+  "anthropic": {
+    "title": "Anthropic",
+    "hex": "191919",
+    "guidelines": ""
+  },
+  "googlegemini": {
+    "title": "Google Gemini",
+    "hex": "8E75B2",
+    "guidelines": ""
+  },
+  "perplexity": {
+    "title": "Perplexity",
+    "hex": "1FB8CD",
+    "guidelines": ""
+  },
+  "notion": {
+    "title": "Notion",
+    "hex": "000000",
+    "guidelines": ""
+  },
+  "n8n": {
+    "title": "n8n",
+    "hex": "EA4B71",
+    "guidelines": ""
+  },
+  "zapier": {
+    "title": "Zapier",
+    "hex": "FF4F00",
+    "guidelines": "https://www.figma.com/file/NQFxTCE5pGR3dHZt0DkOyy/Zapier-Brand-Guidelines-%5BExternal%5D?type=design&node-id=101-9701&mode=design"
+  },
+  "make": {
+    "title": "Make",
+    "hex": "6D00CC",
+    "guidelines": "https://www.make.com/en/press"
+  },
+  "elevenlabs": {
+    "title": "ElevenLabs",
+    "hex": "000000",
+    "guidelines": "https://elevenlabs.io/brand"
+  },
+  "hubspot": {
+    "title": "HubSpot",
+    "hex": "FF7A59",
+    "guidelines": "https://www.hubspot.com/style-guide"
+  },
+  "whatsapp": {
+    "title": "WhatsApp",
+    "hex": "25D366",
+    "guidelines": "https://about.meta.com/brand/resources/whatsapp/whatsapp-brand"
+  },
+  "google": {
+    "title": "Google",
+    "hex": "4285F4",
+    "guidelines": "https://about.google/brand-resource-center/brand-elements/"
+  },
+  "gmail": {
+    "title": "Gmail",
+    "hex": "EA4335",
+    "guidelines": ""
+  },
+  "googledrive": {
+    "title": "Google Drive",
+    "hex": "4285F4",
+    "guidelines": ""
+  },
+  "meta": {
+    "title": "Meta",
+    "hex": "0467DF",
+    "guidelines": "https://www.facebook.com/brand/resources/meta/company-brand"
+  },
+  "deepseek": {
+    "title": "DeepSeek",
+    "hex": "5786FE",
+    "guidelines": ""
+  },
+  "mistralai": {
+    "title": "Mistral AI",
+    "hex": "FA520F",
+    "guidelines": ""
+  },
+  "huggingface": {
+    "title": "Hugging Face",
+    "hex": "FFD21E",
+    "guidelines": "https://huggingface.co/brand"
+  },
+  "githubcopilot": {
+    "title": "GitHub Copilot",
+    "hex": "000000",
+    "guidelines": ""
+  },
+  "figma": {
+    "title": "Figma",
+    "hex": "F24E1E",
+    "guidelines": "https://www.figma.com/using-the-figma-brand/"
+  },
+  "shopify": {
+    "title": "Shopify",
+    "hex": "7AB55C",
+    "guidelines": "https://www.shopify.com/brand-assets"
+  },
+  "wordpress": {
+    "title": "WordPress",
+    "hex": "21759B",
+    "guidelines": "https://wordpressfoundation.org/trademark-policy"
+  },
+  "googlescholar": {
+    "title": "Google Scholar",
+    "hex": "4285F4",
+    "guidelines": ""
+  },
+  "semanticscholar": {
+    "title": "Semantic Scholar",
+    "hex": "1857B6",
+    "guidelines": ""
+  },
+  "zotero": {
+    "title": "Zotero",
+    "hex": "CC2936",
+    "guidelines": ""
+  },
+  "mendeley": {
+    "title": "Mendeley",
+    "hex": "9D1620",
+    "guidelines": ""
+  },
+  "notebooklm": {
+    "title": "NotebookLM",
+    "hex": "000000",
+    "guidelines": ""
+  },
+  "davinciresolve": {
+    "title": "DaVinci Resolve",
+    "hex": "233A51",
+    "guidelines": ""
+  },
+  "youtube": {
+    "title": "YouTube",
+    "hex": "FF0000",
+    "guidelines": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors"
+  },
+  "tiktok": {
+    "title": "TikTok",
+    "hex": "000000",
+    "guidelines": ""
+  },
+  "instagram": {
+    "title": "Instagram",
+    "hex": "FF0069",
+    "guidelines": "https://about.meta.com/brand/resources/instagram"
+  }
+}
