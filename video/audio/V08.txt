@@ -1,0 +1,20 @@
+Everyone's saying "AI agents."
+Here's what it actually means — in thirty seconds.
+
+A chatbot answers.
+An agent acts.
+
+Ask a chatbot for flight prices… and it tells you.
+Ask an agent… and it opens the website, compares the options, fills in the form —
+and asks: "Shall I book?"
+
+Agents use tools: a browser, your email, your calendar, a spreadsheet.
+They break a big task into steps… and work through them.
+
+They're powerful — and they make mistakes.
+So the golden rule:
+let the agent prepare… and you approve.
+Never hand over money or passwords without a human check.
+
+Want to see one working, step by step?
+Comment AGENT — and if enough of you do… that's my next video.
