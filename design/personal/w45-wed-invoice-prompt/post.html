@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<base href="../../../">
+<meta name="es-size" content="1080x1350">
+<title>Joshua · Wed 4 Nov · Invoice prompt card</title>
+<link rel="stylesheet" href="design/templates/shared.css">
+<link rel="stylesheet" href="design/icons/icons.css">
+<link rel="stylesheet" href="design/templates/glass.css">
+<style>
+  .flow { display: grid; grid-template-columns: 300px 90px 1fr; align-items: center; margin-top: 54px; }
+  .vn { background: #D9FDD3; border-radius: 22px; border-top-right-radius: 6px; padding: 20px 22px 14px; color: #111B21; box-shadow: 0 24px 44px -22px rgba(0,10,60,.7); transform: rotate(-3deg); }
+  .vn .row { display: flex; align-items: center; gap: 14px; }
+  .vn .play { width: 52px; height: 52px; border-radius: 50%; background: #008069; color: #fff; display: grid; place-items: center; font-size: 22px; flex: none; }
+  .vn .bars { display: flex; align-items: center; gap: 3px; height: 40px; flex: 1; }
+  .vn .bars i { width: 4px; border-radius: 2px; background: #3E8E7E; display: block; }
+  .vn .meta { display: flex; justify-content: space-between; font-size: 16px; color: #667781; margin-top: 8px; }
+  .vn .meta .tick { color: #53BDEB; }
+  .vn-said { margin-top: 16px; font-family: "Caveat", cursive; font-size: 30px; line-height: 1.15; color: #DCE8FF; transform: rotate(-3deg); }
+  .arrow { display: grid; place-items: center; color: #fff; }
+  .arrow .ic { font-size: 54px; }
+  .inv { background: #fff; color: #0B1530; border-radius: 22px; padding: 26px 28px; box-shadow: 0 40px 70px -30px rgba(0,10,60,.75); transform: rotate(2deg); font-size: 20px; }
+  .inv .top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .inv h4 { margin: 0; font-family: var(--font-display); font-size: 30px; letter-spacing: .06em; color: #1D4ED8; }
+  .inv .biz { font-weight: 700; font-size: 21px; }
+  .inv small { color: #5A6685; font-size: 16px; display: block; line-height: 1.4; }
+  .inv table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 18px; }
+  .inv th { text-align: left; font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #5A6685; border-bottom: 1.5px solid #E3E9F5; padding: 6px 0; }
+  .inv td { padding: 8px 0; border-bottom: 1px solid #EEF2FA; }
+  .inv td.r, .inv th.r { text-align: right; }
+  .inv .tot { display: flex; justify-content: space-between; margin-top: 12px; font-family: var(--font-display); font-weight: 700; font-size: 26px; }
+  .inv .pay { margin-top: 8px; font-size: 15px; color: #5A6685; }
+</style>
+</head>
+<body>
+<div class="canvas glass vivid">
+  <div class="bubble-bg" style="width:420px;height:420px;left:-170px;top:-150px"></div>
+  <div class="bubble-bg" style="width:300px;height:300px;right:-120px;bottom:200px"></div>
+
+  <div class="g-kicker">Prompt of the day · save this</div>
+  <h1 class="g-hl" style="margin-top:26px;font-size:84px">Voice note →<br><span class="boxword"><b>invoice.</b><svg class="cur" viewBox="0 0 24 24"><path d="M4 3l16 7-7 2-3 7z" fill="#fff" stroke="#1D4ED8" stroke-width="1.6" stroke-linejoin="round"/></svg></span><br><span class="acc">In 60 seconds.</span></h1>
+
+  <div class="flow">
+    <div>
+      <div class="vn">
+        <div class="row"><span class="play"><span class="ic i-play"></span></span>
+          <div class="bars">
+            <i style="height:30%"></i><i style="height:60%"></i><i style="height:90%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:40%"></i><i style="height:85%"></i><i style="height:65%"></i><i style="height:35%"></i><i style="height:70%"></i><i style="height:95%"></i><i style="height:50%"></i><i style="height:30%"></i><i style="height:60%"></i><i style="height:80%"></i><i style="height:45%"></i><i style="height:25%"></i><i style="height:55%"></i><i style="height:35%"></i><i style="height:20%"></i>
+          </div>
+        </div>
+        <div class="meta"><span>0:14</span><span>9:41 <span class="tick">✓✓</span></span></div>
+      </div>
+      <div class="vn-said">“Ten bags of rice at 72k each, delivery 5k, due Friday…”</div>
+    </div>
+    <div class="arrow"><span class="ic i-arrow-right"></span></div>
+    <div class="inv">
+      <div class="top">
+        <div><h4>INVOICE</h4><small>No. INV-0012 · 4 Nov 2026</small></div>
+        <div style="text-align:right"><div class="biz">Ade Stores</div><small>Due: Friday</small></div>
+      </div>
+      <table>
+        <tr><th>Item</th><th class="r">Qty</th><th class="r">Price</th><th class="r">Total</th></tr>
+        <tr><td>Rice (50kg)</td><td class="r">10</td><td class="r">₦72,000</td><td class="r">₦720,000</td></tr>
+        <tr><td>Delivery</td><td class="r">1</td><td class="r">₦5,000</td><td class="r">₦5,000</td></tr>
+      </table>
+      <div class="tot"><span>Total</span><span>₦725,000</span></div>
+      <div class="pay">Pay by transfer · [bank details]</div>
+    </div>
+  </div>
+
+  <div class="g-card" style="margin-top:64px">
+    <div class="lbl"><span class="ic i-copy"></span>Copy this prompt · after your voice note</div>
+    <p>“Turn this into a professional invoice. Business name: [name]. Add an invoice number, today’s date, a table with item, quantity, unit price and line total, then the grand total and payment details: [bank details]. Use naira.”</p>
+  </div>
+
+  <div class="chip-ui" style="left:96px;bottom:150px;transform:rotate(-2deg)"><span class="ic i-circle-check"></span>Always check the total yourself</div>
+  <div class="chip-ui" style="right:96px;bottom:150px;transform:rotate(2deg)"><span class="ic i-mic"></span>ChatGPT · Gemini · Claude</div>
+  <svg class="spark" style="right:120px;top:150px;width:48px;height:48px" viewBox="0 0 24 24"><path d="M12 0c.9 6.2 5.1 10.6 12 12-6.9 1.4-11.1 5.8-12 12-.9-6.2-5.1-10.6-12-12C6.9 10.6 11.1 6.2 12 0z"/></svg>
+  <svg class="spark" style="right:300px;top:330px;width:26px;height:26px" viewBox="0 0 24 24"><path d="M12 0c.9 6.2 5.1 10.6 12 12-6.9 1.4-11.1 5.8-12 12-.9-6.2-5.1-10.6-12-12C6.9 10.6 11.1 6.2 12 0z"/></svg>
+
+  <div class="g-brand"><div><b>JOSHUA</b> <span>OBAJE</span></div></div>
+</div>
+</body>
+</html>

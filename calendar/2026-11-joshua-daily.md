@@ -31,7 +31,7 @@ W44 notebook posts and the November video plan
 | --- | --- | --- | --- |
 | **Mon 2** | **V01 Tool Drop**: "3 free AI tools that feel illegal to know" (NotebookLM, Gamma, Napkin) · ~33s · **TOOLS** | **Tool of the week: NotebookLM**: "Turn any PDF into a podcast in 3 steps" (5 slides) | Video ✅ · Post 🛠 |
 | **Tue 3** | **AI for traders**: "Snap your price list, get a customer broadcast in 30 seconds" · ~35s · **PRICE** | **AI for traders**: "5 WhatsApp messages AI can write for you today" (follows last week's traders carousel) | ✅ `posts/2026-11/J08-w45-tue-traders-whatsapp/` |
-| **Wed 4** | **V02 How-To**: "Voice note → professional invoice in 60 seconds" · ~53s · **INVOICE** | **Prompt card**: the invoice prompt | Video ✅ · Post 🛠 |
+| **Wed 4** | **V02 How-To**: "Voice note → professional invoice in 60 seconds" · ~53s · **INVOICE** | **Prompt card**: the invoice prompt | ✅ `posts/2026-11/J09-w45-wed-invoice-prompt/` |
 | **Thu 5** | **Build Log**: "Building an AI agent that turns products into motion videos: week 1" · ~40s | **Today I built**: video-agent screenshot card + 4-post X thread (what it is → what worked → what broke → what's next) | 📥 screen recording + 3 lines: worked / broke / next |
 | **Fri 6** | **V03 Origin Story**: "Nvidia: 30 days from going out of business" · ~51s | **Story lesson**: "Built for games. Won AI." Quote card + LinkedIn post: *build for one market, stay ready for a bigger one* | Video ✅ · Post 🛠 |
 | **Sat 7** | **AI This Week**: 3 real updates from the week, 60s | **Tested this week**: one tool you tried + your verdict ("Useful for… / Not yet because…") | 🛠 news (I research Friday) · ✍️ your verdict |
