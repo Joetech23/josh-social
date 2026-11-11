@@ -4,7 +4,7 @@ id,slug,pillar,title,platforms,status,planned_date,published_date,url_linkedin,u
 003,lead-engine,FR,13000 raw records to 12000+ scored leads,LI;FB;X,superseded-by-006,2026-10-29,,,,,,,,,,Anonymise client
 004,ai-video-agent,HN,What we're building: an AI agent that makes product videos,LI;FB;X,idea,,,,,,,,,,,
 005,w44-mon-launch-coin,HN,We don't just talk about AI. We run on it.,LI;FB;X,ready,2026-10-26,,,,,,,,,,design/concepts/3d-set/post-1.png
-006,w44-tue-lead-engine,FR,13000 raw records to 12000+ scored leads,LI;FB;X,build,2026-10-27,,,,,,,,,,Carousel
+006,w44-tue-lead-engine,FR,13000 raw records to 12000+ scored leads,LI;FB;X,superseded-by-012,2026-10-27,,,,,,,,,,Carousel
 007,w44-wed-video-workflow,GS,Edit faster without cutting corners: our AI-assisted video workflow,LI;FB;X,ready,2026-10-28,,,,,,,,,,posts/2026-10/007-w44-wed-video-workflow (illustrated timeline; swap in real screenshots later)
 008,w44-thu-ghl-ai-employee,OR,GoHighLevel AI Employee explained,LI;FB;X,build,2026-10-29,,,,,,,,,,Verify pricing before posting
 009,w44-fri-argue-bubble,CC,Ask AI how it fails,LI;FB;X,ready,2026-10-30,,,,,,,,,,posts/2026-10/009-w44-fri-argue-bubble
@@ -19,3 +19,10 @@ J06,w44-sat-tested,JTW,3 AI updates from October,LI-personal;X,needs-verdict,202
 J07,w44-sun-bigger-picture,JBP,Africa doesn't need to catch up on AI,LI-personal;X;FB,needs-verdict,2026-11-01,,,,,,,,,,
 J08,w45-tue-traders-whatsapp,JAF,5 WhatsApp messages AI can write for you today,LI-personal;X;FB;IG,ready,2026-11-03,,,,,,,,,,posts/2026-11/J08-w45-tue-traders-whatsapp (Blue Glass) + video T01
 J09,w45-wed-invoice-prompt,JAF,Prompt card: voice note to invoice,LI-personal;X;FB;IG,ready,2026-11-04,,,,,,,,,,posts/2026-11/J09-w45-wed-invoice-prompt + video V02
+012,w46-thu-lead-engine,FR,13000 raw records to 12000+ scored leads,LI;FB;X,ready,2026-11-12,,,,,,,,,,posts/2026-11/012-w46-thu-lead-engine
+013,w46-fri-website-check,GS,Is your website losing customers? 7-point check,LI;FB;X,ready,2026-11-13,,,,,,,,,,posts/2026-11/013-w46-fri-website-check
+014,w46-sat-brief-ai,CC,Brief AI like a new hire,LI;FB;X,ready,2026-11-14,,,,,,,,,,posts/2026-11/014-w46-sat-brief-ai
+015,w46-sun-how-we-work,HN,How a project flies with EAGLESCROFT,LI;FB;X,ready,2026-11-15,,,,,,,,,,posts/2026-11/015-w46-sun-how-we-work
+016,w46-mon-automation-objections,GS,4 reasons businesses haven't automated yet,LI;FB;X,ready,2026-11-16,,,,,,,,,,posts/2026-11/016-w46-mon-automation-objections
+017,w46-tue-ai-agents-radar,OR,AI answers customers on WhatsApp and Google,LI;FB;X,ready,2026-11-17,,,,,,,,,,posts/2026-11/017-w46-tue-ai-agents-radar
+018,w46-wed-ads-checklist,GS,Before you boost that post: 5 checks,LI;FB;X,ready,2026-11-18,,,,,,,,,,posts/2026-11/018-w46-wed-ads-checklist

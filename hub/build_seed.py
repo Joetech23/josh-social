@@ -48,6 +48,24 @@ POSTS = {
     },
 }
 
+POSTS["2026-W46"] = {
+        ("eaglescroft", "Thu"): ("012", [f"posts/2026-11/012-w46-thu-lead-engine/eaglescroft-thu-12-nov-{i}.png" for i in range(1, 7)]
+                                 + ["posts/2026-11/012-w46-thu-lead-engine/eaglescroft-thu-12-nov-linkedin.pdf"]),
+        ("eaglescroft", "Fri"): ("013", [f"posts/2026-11/013-w46-fri-website-check/eaglescroft-fri-13-nov-{i}.png" for i in range(1, 7)]
+                                 + ["posts/2026-11/013-w46-fri-website-check/eaglescroft-fri-13-nov-linkedin.pdf"]),
+        ("eaglescroft", "Sat"): ("014", ["posts/2026-11/014-w46-sat-brief-ai/eaglescroft-sat-14-nov.png"]),
+        ("eaglescroft", "Sun"): ("015", ["posts/2026-11/015-w46-sun-how-we-work/eaglescroft-sun-15-nov.png"]),
+        ("eaglescroft", "Mon"): ("016", [f"posts/2026-11/016-w46-mon-automation-objections/eaglescroft-mon-16-nov-{i}.png" for i in range(1, 7)]
+                                 + ["posts/2026-11/016-w46-mon-automation-objections/eaglescroft-mon-16-nov-linkedin.pdf"]),
+        ("eaglescroft", "Tue"): ("017", [f"posts/2026-11/017-w46-tue-ai-agents-radar/eaglescroft-tue-17-nov-{i}.png" for i in range(1, 5)]
+                                 + ["posts/2026-11/017-w46-tue-ai-agents-radar/eaglescroft-tue-17-nov-linkedin.pdf"]),
+        ("eaglescroft", "Wed"): ("018", [f"posts/2026-11/018-w46-wed-ads-checklist/eaglescroft-wed-18-nov-{i}.png" for i in range(1, 7)]
+                                 + ["posts/2026-11/018-w46-wed-ads-checklist/eaglescroft-wed-18-nov-linkedin.pdf"]),
+}
+
+# Weeks that don't start on a Monday: the first day of the run.
+WEEK_START = {"2026-W46": "2026-11-12"}
+
 # What each unfinished post is waiting on, in plain words.
 NEEDS = {
     "007": "2 screenshots of a video edit in progress (timeline, captions panel) and our real before/after edit time, if known.",
@@ -56,6 +74,11 @@ NEEDS = {
     "J07": "Your edits to the Sunday opinion draft below, or your own version.",
 }
 TIPS = {
+    "012": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post (title: \"13,000 raw records. 12,000+ scored leads.\").",
+    "013": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post.",
+    "016": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post. Reply to every comment that names a number.",
+    "017": "Before posting, open both features in your own WhatsApp Business and Google Business Profile accounts: availability varies by country and account.",
+    "018": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post.",
     "007": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post (title: \"Edit faster without cutting corners\").",
     "J03": "LinkedIn: upload the PDF as a document post (title: \"AI for your literature review, without cheating\"). X: post slides 1, 4 and 5 with the X caption.",
     "008": "Re-check HighLevel's current AI Employee pricing and language support before this goes out.",
@@ -67,6 +90,10 @@ TIPS = {
 
 
 def week_dates(week):
+    if week in WEEK_START:
+        start = datetime.date.fromisoformat(WEEK_START[week])
+        days = [start + datetime.timedelta(days=i) for i in range(7)]
+        return {DAYS[d.weekday()]: d for d in days}
     year, wk = week.split("-W")
     monday = datetime.date.fromisocalendar(int(year), int(wk), 1)
     return {d: monday + datetime.timedelta(days=i) for i, d in enumerate(DAYS)}
@@ -153,7 +180,10 @@ def build(week, asset_map, out_dir):
     out.mkdir(parents=True, exist_ok=True)
     written = []
     for account in ("eaglescroft", "joshua"):
-        md = (ROOT / "calendar" / f"{week}-{account}.md").read_text()
+        cal = ROOT / "calendar" / f"{week}-{account}.md"
+        if not cal.exists():
+            continue
+        md = cal.read_text()
         rows = parse_table(md)
         sections = {}
         for sec in re.split(r"^## ", md, flags=re.M)[1:]:
@@ -163,6 +193,8 @@ def build(week, asset_map, out_dir):
         for order, day in enumerate(DAYS):
             row = rows.get(day)
             if not row:
+                continue
+            if (account, day) not in POSTS[week]:
                 continue
             pid, files = POSTS[week][(account, day)]
             status = row["status"]

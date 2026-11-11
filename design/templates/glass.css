@@ -17,7 +17,7 @@
   background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), rgba(255,255,255,.06) 60%, transparent 70%);
   border: 1px solid rgba(255,255,255,.18); }
 .light .bubble-bg { background: radial-gradient(circle at 30% 30%, rgba(37,99,235,.14), rgba(37,99,235,.04) 60%, transparent 70%); border-color: rgba(37,99,235,.10); }
-.canvas.glass > :not(.chip-ui):not(.tile-g):not(.spark):not(.g-brand):not(.bubble-bg) { position: relative; z-index: 1; }
+.canvas.glass > :not(.chip-ui):not(.tile-g):not(.spark):not(.g-brand):not(.bubble-bg):not(.logo-g) { position: relative; z-index: 1; }
 
 /* Type */
 .g-kicker { font-family: var(--font-mono); font-size: 18px; letter-spacing: .2em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 12px; }
