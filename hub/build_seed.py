@@ -53,12 +53,13 @@ POSTS["2026-W46"] = {
                                  + ["posts/2026-11/012-w46-thu-lead-engine/eaglescroft-thu-12-nov-linkedin.pdf"]),
         ("eaglescroft", "Fri"): ("013", [f"posts/2026-11/013-w46-fri-website-check/eaglescroft-fri-13-nov-{i}.png" for i in range(1, 7)]
                                  + ["posts/2026-11/013-w46-fri-website-check/eaglescroft-fri-13-nov-linkedin.pdf"]),
-        ("eaglescroft", "Sat"): ("014", ["posts/2026-11/014-w46-sat-brief-ai/eaglescroft-sat-14-nov.png"]),
+        ("eaglescroft", "Sat"): ("019", [f"posts/2026-11/019-w46-sat-brand-not-logo/eaglescroft-sat-14-nov-{i}.png" for i in range(1, 7)]
+                                 + ["posts/2026-11/019-w46-sat-brand-not-logo/eaglescroft-sat-14-nov-linkedin.pdf"]),
         ("eaglescroft", "Sun"): ("015", ["posts/2026-11/015-w46-sun-how-we-work/eaglescroft-sun-15-nov.png"]),
-        ("eaglescroft", "Mon"): ("016", [f"posts/2026-11/016-w46-mon-automation-objections/eaglescroft-mon-16-nov-{i}.png" for i in range(1, 7)]
-                                 + ["posts/2026-11/016-w46-mon-automation-objections/eaglescroft-mon-16-nov-linkedin.pdf"]),
-        ("eaglescroft", "Tue"): ("017", [f"posts/2026-11/017-w46-tue-ai-agents-radar/eaglescroft-tue-17-nov-{i}.png" for i in range(1, 5)]
-                                 + ["posts/2026-11/017-w46-tue-ai-agents-radar/eaglescroft-tue-17-nov-linkedin.pdf"]),
+        ("eaglescroft", "Mon"): ("020", [f"posts/2026-11/020-w46-mon-ux-fixes/eaglescroft-mon-16-nov-{i}.png" for i in range(1, 8)]
+                                 + ["posts/2026-11/020-w46-mon-ux-fixes/eaglescroft-mon-16-nov-linkedin.pdf"]),
+        ("eaglescroft", "Tue"): ("021", [f"posts/2026-11/021-w46-tue-five-videos/eaglescroft-tue-17-nov-{i}.png" for i in range(1, 8)]
+                                 + ["posts/2026-11/021-w46-tue-five-videos/eaglescroft-tue-17-nov-linkedin.pdf"]),
         ("eaglescroft", "Wed"): ("018", [f"posts/2026-11/018-w46-wed-ads-checklist/eaglescroft-wed-18-nov-{i}.png" for i in range(1, 7)]
                                  + ["posts/2026-11/018-w46-wed-ads-checklist/eaglescroft-wed-18-nov-linkedin.pdf"]),
 }
@@ -74,6 +75,9 @@ NEEDS = {
     "J07": "Your edits to the Sunday opinion draft below, or your own version.",
 }
 TIPS = {
+    "019": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post. Video tonight: EV03 POV skit.",
+    "020": "Facebook and X: post the 7 slides as a carousel. LinkedIn: upload the PDF as a document post. Video tonight: EV05 Spot the Difference.",
+    "021": "Facebook and X: post the 7 slides as a carousel. LinkedIn: upload the PDF as a document post. Video tonight: EV06 Raw vs Edited (needs a raw clip).",
     "012": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post (title: \"13,000 raw records. 12,000+ scored leads.\").",
     "013": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post.",
     "016": "Facebook and X: post the 6 slides as a carousel. LinkedIn: upload the PDF as a document post. Reply to every comment that names a number.",

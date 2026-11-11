@@ -1,0 +1,4 @@
+Which form would you actually fill in?
+A… or B? Comment before the answer.
+It's B. Three fields instead of ten, and one clear button.
+Every extra field is another reason to give up. Follow for more UX fixes.

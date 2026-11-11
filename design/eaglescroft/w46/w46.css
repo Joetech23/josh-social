@@ -107,3 +107,33 @@
 .chat .b.ai.wa { background: #D9FDD3; }
 .chat .b small { display: block; font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; color: #5A6685; margin-bottom: 6px; text-transform: uppercase; }
 .illus { font-family: var(--font-mono); font-size: 13px; letter-spacing: .16em; text-transform: uppercase; opacity: .65; }
+
+/* Before / after mini mocks (UX post) */
+.ba { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 46px; }
+.ba > div { border-radius: 22px; padding: 22px; min-height: 380px; position: relative; }
+.ba .bf { background: #F3F4F6; border: 2px dashed #CBD2E0; color: #6B7280; }
+.ba .af { background: #fff; border: 2px solid #2F6BFF; color: #0B1530; box-shadow: 0 30px 60px -30px rgba(29,78,216,.55); }
+.ba .tag-ba { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 15px; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 18px; }
+.ba .bf .tag-ba { color: #9CA3AF; }
+.ba .af .tag-ba { color: #2F6BFF; }
+.mock-btn { display: inline-block; padding: 18px 28px; border-radius: 14px; font-weight: 700; font-size: 26px; }
+.mock-btn.pri { background: #2F6BFF; color: #fff; }
+.mock-link { font-size: 23px; line-height: 2; color: #6B7280; text-decoration: underline; margin-right: 14px; }
+.field { border: 1.5px solid #D5DBE7; border-radius: 10px; padding: 8px 14px; font-size: 18px; color: #8A93A8; margin-bottom: 8px; background: #fff; }
+.af .field { font-size: 24px; padding: 18px 18px; margin-bottom: 14px; border-color: #C9DAFF; color: #5A6685; }
+.vivid .ba .bf { background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.35); color: rgba(255,255,255,.7); }
+.vivid .ba .bf .tag-ba { color: rgba(255,255,255,.6); }
+.vivid .ba .af { border-color: #fff; }
+
+/* Brand board pieces */
+.swatch { border-radius: 18px; height: 120px; padding: 14px 16px; font-family: var(--font-mono); font-size: 15px; letter-spacing: .1em; display: flex; align-items: flex-end; }
+.type-spec { background: #fff; color: #0B1530; border-radius: 22px; padding: 26px 30px; }
+.type-spec b { font-family: var(--font-display); font-size: 110px; line-height: 1; letter-spacing: -.04em; }
+.msg-card { border-radius: 20px; padding: 22px 24px; font-size: 25px; line-height: 1.45; font-weight: 500; }
+
+/* Video frame mock */
+.vframe { border-radius: 24px; overflow: hidden; position: relative; background: linear-gradient(150deg, #0A1F6B, #1D4ED8 60%, #6EA8FF); box-shadow: 0 40px 70px -30px rgba(0,10,60,.7); display: grid; place-items: center; }
+.vframe .playb { width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,.92); display: grid; place-items: center; color: #1D4ED8; font-size: 52px; box-shadow: 0 20px 40px -12px rgba(0,10,60,.6); }
+.vframe .cap { position: absolute; left: 22px; bottom: 20px; right: 22px; font-family: var(--font-display); font-weight: 700; font-size: 26px; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.35); }
+.vframe .len { position: absolute; right: 18px; top: 16px; font-family: var(--font-mono); font-size: 16px; color: #fff; background: rgba(0,0,0,.4); padding: 6px 10px; border-radius: 8px; }
+.vivid .vframe { border: 2px solid rgba(255,255,255,.45); }

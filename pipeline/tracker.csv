@@ -21,8 +21,18 @@ J08,w45-tue-traders-whatsapp,JAF,5 WhatsApp messages AI can write for you today,
 J09,w45-wed-invoice-prompt,JAF,Prompt card: voice note to invoice,LI-personal;X;FB;IG,ready,2026-11-04,,,,,,,,,,posts/2026-11/J09-w45-wed-invoice-prompt + video V02
 012,w46-thu-lead-engine,FR,13000 raw records to 12000+ scored leads,LI;FB;X,ready,2026-11-12,,,,,,,,,,posts/2026-11/012-w46-thu-lead-engine
 013,w46-fri-website-check,GS,Is your website losing customers? 7-point check,LI;FB;X,ready,2026-11-13,,,,,,,,,,posts/2026-11/013-w46-fri-website-check
-014,w46-sat-brief-ai,CC,Brief AI like a new hire,LI;FB;X,ready,2026-11-14,,,,,,,,,,posts/2026-11/014-w46-sat-brief-ai
+014,w46-sat-brief-ai,CC,Brief AI like a new hire,LI;FB;X,bank,,,,,,,,,,,posts/2026-11/014-w46-sat-brief-ai (moved to next week's bank)
 015,w46-sun-how-we-work,HN,How a project flies with EAGLESCROFT,LI;FB;X,ready,2026-11-15,,,,,,,,,,posts/2026-11/015-w46-sun-how-we-work
-016,w46-mon-automation-objections,GS,4 reasons businesses haven't automated yet,LI;FB;X,ready,2026-11-16,,,,,,,,,,posts/2026-11/016-w46-mon-automation-objections
-017,w46-tue-ai-agents-radar,OR,AI answers customers on WhatsApp and Google,LI;FB;X,ready,2026-11-17,,,,,,,,,,posts/2026-11/017-w46-tue-ai-agents-radar
+016,w46-mon-automation-objections,GS,4 reasons businesses haven't automated yet,LI;FB;X,bank,,,,,,,,,,,posts/2026-11/016-w46-mon-automation-objections (moved to next week's bank)
+017,w46-tue-ai-agents-radar,OR,AI answers customers on WhatsApp and Google,LI;FB;X,bank,,,,,,,,,,,posts/2026-11/017-w46-tue-ai-agents-radar (moved to next week's bank)
 018,w46-wed-ads-checklist,GS,Before you boost that post: 5 checks,LI;FB;X,ready,2026-11-18,,,,,,,,,,posts/2026-11/018-w46-wed-ads-checklist
+019,w46-sat-brand-not-logo,GS,Your logo isn't your brand,LI;FB;X,ready,2026-11-14,,,,,,,,,,posts/2026-11/019-w46-sat-brand-not-logo + video
+020,w46-mon-ux-fixes,GS,5 small UX fixes that make your website easier to buy from,LI;FB;X,ready,2026-11-16,,,,,,,,,,posts/2026-11/020-w46-mon-ux-fixes + video
+021,w46-tue-five-videos,GS,5 videos every business should have,LI;FB;X,ready,2026-11-17,,,,,,,,,,posts/2026-11/021-w46-tue-five-videos + video
+EV01,w46-video-1,VID,"Workflow Glow-Up: 13,000 contacts",TT;YT;IG;FB;LI;X,script-ready,2026-11-12,,,,,,,,,,video/eaglescroft-w46-videos.md
+EV02,w46-video-2,VID,Website Glow-Up + Drop Your Website,TT;YT;IG;FB;LI;X,script-ready,2026-11-13,,,,,,,,,,video/eaglescroft-w46-videos.md
+EV03,w46-video-3,VID,POV: make the logo bigger,TT;YT;IG;FB;LI;X,script-ready,2026-11-14,,,,,,,,,,video/eaglescroft-w46-videos.md
+EV04,w46-video-4,VID,Brand film: We Help Businesses Fly Online,TT;YT;IG;FB;LI;X,script-ready,2026-11-15,,,,,,,,,,video/eaglescroft-w46-videos.md
+EV05,w46-video-5,VID,Spot the Difference: A or B form,TT;YT;IG;FB;LI;X,script-ready,2026-11-16,,,,,,,,,,video/eaglescroft-w46-videos.md
+EV06,w46-video-6,VID,Raw vs Edited: 3 edits,TT;YT;IG;FB;LI;X,script-ready,2026-11-17,,,,,,,,,,video/eaglescroft-w46-videos.md
+EV07,w46-video-7,VID,Myth vs Fact: Google your business,TT;YT;IG;FB;LI;X,script-ready,2026-11-18,,,,,,,,,,video/eaglescroft-w46-videos.md

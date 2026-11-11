@@ -421,6 +421,162 @@ def ads(t):
     return s
 
 
+# ---------------------------------------------------------------- Sat 14 · branding
+@post("019-brand-not-logo", "Ground School · your logo isn't your brand")
+def brand(t):
+    T = 6
+    s = {}
+    s[1] = page(t, 1, T, "vivid", centred(f"""
+    {kicker("Ground School · branding")}
+    <h1 class="g-hl" style="margin-top:28px;font-size:92px">Your <span class="boxword"><b>logo</b>{cursor()}</span><br>isn't your brand.</h1>
+    <p class="g-sub" style="font-size:32px">A logo is a signature. A brand is the whole handwriting.</p>
+    <div style="display:grid;grid-template-columns:200px 1fr;gap:22px;margin-top:56px;align-items:stretch">
+      <div class="tile-g white" style="position:static;width:200px;height:200px;border-radius:44px;font-family:var(--font-display);font-weight:700;font-size:96px;color:#1D4ED8">Aa</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+        <div class="swatch" style="background:#001E60;color:#fff">NAVY</div><div class="swatch" style="background:#2563EB;color:#fff">BLUE</div>
+        <div class="swatch" style="background:#93C5FD;color:#0B2A7A">SKY</div><div class="swatch" style="background:#fff;color:#0B2A7A">WHITE</div>
+        <div class="chip-ui" style="position:static;grid-column:span 2;justify-content:center">Voice: warm · clear</div>
+        <div class="chip-ui" style="position:static;grid-column:span 2;justify-content:center">Same everywhere</div>
+      </div>
+    </div>""") + STAR.format(s="right:120px;top:150px;width:46px;height:46px"))
+    s[2] = page(t, 2, T, "light", centred(f"""
+    {num(1, "The logo")}
+    <h2 class="g-hl" style="margin-top:30px;font-size:80px">The logo is just<br>the <b class="acc">signature.</b></h2>
+    <div class="rows" style="margin-top:50px">
+      {row("eye", "It helps people recognise you", "On a signboard, a profile picture, a receipt.")}
+      {row("x-circle", "It can't tell them why to choose you", "That's the job of everything around it: how you look, sound and behave.")}
+    </div>
+    <p class="g-sub">That's why a new logo rarely fixes a brand.</p>"""))
+    s[3] = page(t, 3, T, "vivid", centred(f"""
+    {num(2, "Colour & type")}
+    <h2 class="g-hl" style="margin-top:30px;font-size:78px">Colours and type,<br><span class="acc">used everywhere.</span></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:50px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="swatch" style="background:#001E60;color:#fff;height:150px">#001E60</div><div class="swatch" style="background:#2563EB;color:#fff;height:150px">#2563EB</div>
+        <div class="swatch" style="background:#93C5FD;color:#0B2A7A;height:150px">#93C5FD</div><div class="swatch" style="background:#F4F6FB;color:#0B2A7A;height:150px">#F4F6FB</div>
+      </div>
+      <div class="type-spec"><b>Aa</b><p style="margin:14px 0 0;font-size:22px;color:#48526E">One headline font. One body font. The same sizes on every page, post and document.</p></div>
+    </div>
+    <p class="g-sub">Pick a few. Write them down. Never improvise.</p>"""))
+    s[4] = page(t, 4, T, "light", centred(f"""
+    {num(3, "Voice")}
+    <h2 class="g-hl" style="margin-top:30px;font-size:76px">How you <b class="acc">sound</b> matters<br>as much as how you look.</h2>
+    <div style="display:grid;gap:18px;margin-top:46px">
+      <div class="msg-card" style="background:#F3F4F6;color:#6B7280;border:2px dashed #CBD2E0"><span class="g-kicker" style="color:#9CA3AF;font-size:14px">Off-brand</span><br>"Dear valued customer, kindly be informed that your order has been processed accordingly."</div>
+      <div class="msg-card" style="background:#fff;border:2px solid #2F6BFF;color:#0B1530"><span class="g-kicker" style="font-size:14px">On-brand</span><br>"Hi Ada, your order is on its way and should arrive by 4pm. Track it here."</div>
+    </div>
+    <p class="g-sub">Write down 3 words for how you sound. Use them on every message.</p>"""))
+    tps = ["Website", "WhatsApp", "Invoices", "Signboard", "Instagram", "Email signature", "Packaging", "Proposals"]
+    chips = "".join(f'<div class="chip-ui" style="position:static;justify-content:center;font-size:25px">{x}</div>' for x in tps)
+    s[5] = page(t, 5, T, "vivid", centred(f"""
+    {num(4, "Consistency")}
+    <h2 class="g-hl" style="margin-top:30px;font-size:78px">Same look. Same voice.<br><span class="boxword"><b>Every</b>{cursor()}</span> <span class="acc">touchpoint.</span></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px">{chips}</div>
+    <p class="g-sub">When everything matches, people trust you before they've met you.</p>"""))
+    s[6] = page(t, 6, T, "light", centred(f"""
+    {kicker("Your turn")}
+    <h2 class="g-hl" style="margin-top:28px;font-size:86px">Is your brand<br><span class="boxword"><b>consistent?</b>{cursor("light")}</span></h2>
+    <p class="g-sub" style="font-size:30px">We build brand systems: positioning, visuals, voice and guidelines, so every touchpoint looks like it came from the same business.</p>
+    <div style="margin-top:56px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+      <div class="g-pill"><span>Book a free call with EAGLESCROFT</span><span class="ic i-arrow-right" style="font-size:28px"></span></div>
+      <div class="g-pill"><span>eaglescroft.com.ng</span><span class="ic i-globe" style="font-size:28px"></span></div>
+    </div>""") + STAR.format(s="right:140px;top:320px;width:46px;height:46px"))
+    return s
+
+
+# ---------------------------------------------------------------- Mon 16 · UX fixes
+@post("020-ux-fixes", "Ground School · 5 small UX fixes")
+def ux(t):
+    T = 7
+    s = {}
+    s[1] = page(t, 1, T, "vivid", centred(f"""
+    {kicker("Ground School · UI/UX design")}
+    <h1 class="g-hl" style="margin-top:28px;font-size:86px"><b>5 small UX fixes</b><br>that make your website<br><span class="boxword"><b>easier</b>{cursor()}</span> <span class="acc">to buy from.</span></h1>
+    <p class="g-sub" style="font-size:30px">Customers rarely leave because they dislike you. They leave because something felt like hard work.</p>
+    <div style="height:240px"></div>""") +
+        '<div class="chip-ui" style="left:96px;top:1000px;transform:rotate(-3deg)"><span class="ic i-mouse-pointer-2"></span>One clear button</div>'
+        '<div class="chip-ui" style="left:420px;top:1060px;transform:rotate(2deg)"><span class="ic i-list-checks"></span>Shorter forms</div>'
+        '<div class="chip-ui" style="left:700px;top:980px;transform:rotate(-1deg)"><span class="ic i-eye"></span>Readable text</div>'
+        + STAR.format(s="right:120px;top:150px;width:46px;height:46px"))
+    fixes = [
+        ("light", "One main button.<br><b class=\"acc\">Make it look like one.</b>", "Fix 1 · buttons",
+         '<span class="mock-link">Learn more</span><span class="mock-link">Details</span><span class="mock-link">Contact</span><span class="mock-link">Info</span>',
+         '<span class="mock-btn pri">Book a free call</span><p style="margin:16px 0 0;font-size:19px;color:#5A6685">or <u>see our work</u></p>',
+         "Four equal links compete. One clear button wins."),
+        ("vivid", "Ask for less.<br><span class=\"acc\">Get more sign-ups.</span>", "Fix 2 · forms",
+         "".join(f'<div class="field">{x}</div>' for x in ["Title", "First name", "Middle name", "Surname", "Company", "Job title", "Address", "Phone", "Email", "How did you hear…"]),
+         "".join(f'<div class="field">{x}</div>' for x in ["Your name", "WhatsApp number", "What do you need?"]) + '<span class="mock-btn pri" style="margin-top:8px">Send</span>',
+         "Every extra field is one more reason to give up."),
+        ("light", "Text people can<br><b class=\"acc\">actually read.</b>", "Fix 3 · readability",
+         '<p style="font-size:18px;color:#A3A9B6;line-height:1.3">We are a leading provider of innovative solutions across multiple verticals delivering value to stakeholders through synergy and best-in-class excellence in all we do every day.</p>',
+         '<p style="font-size:30px;font-weight:700;margin:0;color:#0B1530">Websites that win you customers.</p><p style="font-size:22px;color:#48526E;line-height:1.5;margin:12px 0 0">Fast, clear and built for phones. Live in weeks.</p>',
+         "Bigger text, stronger contrast, shorter lines."),
+        ("vivid", "Buttons made<br><span class=\"acc\">for thumbs.</span>", "Fix 4 · tap targets",
+         '<div style="display:flex;gap:4px;flex-wrap:wrap">' + "".join(f'<span style="font-size:16px;border:1px solid #CBD2E0;padding:4px 7px">{x}</span>' for x in ["Home", "About", "Services", "Work", "Blog", "FAQ", "Contact", "Call"]) + '</div>',
+         '<div style="display:grid;gap:14px">' + "".join(f'<span class="mock-btn" style="border:2px solid #2F6BFF;color:#1D4ED8;text-align:center">{x}</span>' for x in ["Services", "Our work"]) + '<span class="mock-btn pri" style="text-align:center">WhatsApp us</span></div>',
+         "Big enough to hit first time, with space between them."),
+        ("light", "Show people<br><b class=\"acc\">where they are.</b>", "Fix 5 · progress",
+         '<p style="font-size:26px;margin:0">Submitting…</p><p style="font-size:21px;margin:16px 0 0">(no message, no progress, no idea if it worked)</p>',
+         '<p style="font-size:20px;font-family:var(--font-mono);letter-spacing:.12em;color:#2F6BFF;margin:0">STEP 2 OF 3</p><div style="height:16px;border-radius:99px;background:#E6EEFF;margin-top:10px"><div style="width:66%;height:100%;border-radius:99px;background:#2F6BFF"></div></div><p style="font-size:27px;margin:28px 0 0;font-weight:700;color:#15803D">✓ Received! We reply within 24 hours.</p>',
+         "Steps, loading states and clear confirmations calm people down."),
+    ]
+    for i, (tone, hl, lab, before, after, note) in enumerate(fixes):
+        s[i + 2] = page(t, i + 2, T, tone, centred(f"""
+    {num(i + 1, lab.split(" · ")[1])}
+    <h2 class="g-hl" style="margin-top:30px;font-size:76px">{hl}</h2>
+    <div class="ba"><div class="bf"><div class="tag-ba"><span class="ic i-x-circle"></span>Before</div>{before}</div><div class="af"><div class="tag-ba"><span class="ic i-circle-check"></span>After</div>{after}</div></div>
+    <p class="g-sub">{note}</p>"""))
+    s[7] = page(t, 7, T, "vivid", centred(f"""
+    {kicker("The rule")}
+    <h2 class="g-hl" style="margin-top:28px;font-size:84px">Good design feels<br><span class="boxword"><b>invisible.</b>{cursor()}</span><br><span class="acc">Bad design feels like work.</span></h2>
+    <div style="margin-top:56px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+      <div class="g-pill"><span>Want a UX review of your site or app?</span><span class="ic i-arrow-right" style="font-size:28px"></span></div>
+      <div class="g-pill"><span>eaglescroft.com.ng</span><span class="ic i-globe" style="font-size:28px"></span></div>
+    </div>""") + STAR.format(s="right:140px;top:200px;width:46px;height:46px"))
+    return s
+
+
+# ---------------------------------------------------------------- Tue 17 · five videos
+@post("021-five-videos", "Ground School · 5 videos every business should have")
+def five_videos(t):
+    T = 7
+    s = {}
+    s[1] = page(t, 1, T, "vivid", centred(f"""
+    {kicker("Ground School · video & motion")}
+    <h1 class="g-hl" style="margin-top:28px;font-size:92px"><b>5 videos</b><br>every business<br>should <span class="boxword"><b>have.</b>{cursor()}</span></h1>
+    <p class="g-sub" style="font-size:30px">If customers can't see what you do in 30 seconds, they'll find someone who shows them.</p>
+    <div style="height:260px"></div>""") +
+        '<div class="tile-g" style="right:130px;top:820px;transform:rotate(-8deg);width:180px;height:180px;border-radius:48px"><span class="ic i-play" style="font-size:80px"></span></div>'
+        '<div class="chip-ui" style="left:96px;top:1010px;transform:rotate(-3deg)"><span class="ic i-clapperboard"></span>Brand film</div>'
+        '<div class="chip-ui" style="left:360px;top:1070px;transform:rotate(2deg)"><span class="ic i-film"></span>Reels</div>'
+        '<div class="chip-ui" style="left:560px;top:990px;transform:rotate(-1deg)"><span class="ic i-captions"></span>Captions on</div>'
+        + STAR.format(s="right:120px;top:150px;width:46px;height:46px"))
+    vids = [
+        ("light", "Brand film", "Who you are and why you exist.", "60–90s", "Website hero · LinkedIn · pitches", "16/9", "Abuja to the world."),
+        ("vivid", "Demo", "Your product or service in action, start to finish.", "30–60s", "Website · sales chats · ads", "16/9", "How it works"),
+        ("light", "Customer story", "Real results, in the customer's own words (with permission).", "45–90s", "Website · LinkedIn · proposals", "16/9", "In their own words."),
+        ("vivid", "Explainer", "How it works, step by step. Motion graphics shine here.", "45–75s", "Website · onboarding · YouTube", "16/9", "Step 1 of 3"),
+        ("light", "Short-form reels", "Weekly, captioned, made for the scroll: tips, behind the scenes, results.", "15–35s", "TikTok · Reels · Shorts · Status", "9/16", "Stop scrolling."),
+    ]
+    for i, (tone, name, what, length, where, ratio, cap) in enumerate(vids):
+        w = "100%" if ratio == "16/9" else "420px"
+        s[i + 2] = page(t, i + 2, T, tone, centred(f"""
+    {num(i + 1, "Video")}
+    <h2 class="g-hl" style="margin-top:30px;font-size:86px"><b class="acc">{name}</b></h2>
+    <p class="g-sub" style="font-size:32px;margin-top:18px">{what}</p>
+    <div class="vframe" style="margin-top:40px;aspect-ratio:{ratio};width:{w};{'max-height:520px;' if ratio == '9/16' else ''}"><span class="len">{length}</span><span class="playb"><span class="ic i-play"></span></span><span class="cap">{cap}</span></div>
+    <div class="g-card" style="margin-top:30px"><div class="lbl"><span class="ic i-send"></span>Where it works</div><p>{where}</p></div>"""))
+    s[7] = page(t, 7, T, "vivid", centred(f"""
+    {kicker("Start this month")}
+    <h2 class="g-hl" style="margin-top:28px;font-size:84px">One a month =<br>a full <span class="boxword"><b>video library</b>{cursor()}</span><br><span class="acc">by mid-year.</span></h2>
+    <p class="g-sub" style="font-size:30px">We script, shoot, edit and animate.</p>
+    <div style="margin-top:56px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+      <div class="g-pill"><span>Need video that sells? Book a free call</span><span class="ic i-arrow-right" style="font-size:28px"></span></div>
+      <div class="g-pill"><span>eaglescroft.com.ng</span><span class="ic i-globe" style="font-size:28px"></span></div>
+    </div>""") + STAR.format(s="right:140px;top:200px;width:46px;height:46px"))
+    return s
+
+
 def main():
     render = "--render" in sys.argv
     only = [a for a in sys.argv[1:] if not a.startswith("--")]
